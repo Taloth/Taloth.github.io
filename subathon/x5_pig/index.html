@@ -2,110 +2,111 @@
 
 <head>
     <link rel="stylesheet" id="neve-google-font-poppins-css" href="//fonts.googleapis.com/css?family=Poppins%3A400%2C600&amp;display=swap&amp;ver=5.7" type="text/css" media="all"><style>
-:root{--nv-primary-accent:#2b2b2b;--nv-secondary-accent:#b400ff;--nv-site-bg:#ffffff;--nv-light-bg:#ededed;--nv-dark-bg:#14171c;--nv-fallback-ff:Lucida Sans Unicode, Lucida Grande, sans-serif;--wp-dark-mode-bg:#1B2836;--wp-dark-mode-text:#fff;--wp-dark-mode-link:#459BE6;--wp-dark-mode-border:#394654;--wp-dark-mode-btn:#2f3c4a}body{background-color:var(--nv-site-bg);color:var(--nv-primary-accent);font-family:Poppins,var(--nv-fallback-ff);font-size:15px}html.wp-dark-mode-active body{background-color:var(--wp-dark-mode-bg);color:var(--wp-dark-mode-text)}@media (min-width:576px){body,.site-title{font-size:16px;line-height:1.6;letter-spacing:0px}}@media (min-width:960px){body,.site-title{font-size:17px;line-height:1.7;letter-spacing:0px}}#toggle-dark-mode{cursor:pointer}#toggle-dark-mode:hover{color:var(--wp-dark-mode-link)}html.wp-dark-mode-active a:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a *:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a:active:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a:active *:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a:visited:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a:visited *:not(.wp-dark-mode-ignore){color:var(--wp-dark-mode-link) !important}a{text-decoration:none}a:hover{text-decoration:underline}
+:root{--nv-primary-accent:#2b2b2b;--nv-secondary-accent:#b400ff;--nv-site-bg:#ffffff;--nv-light-bg:#ededed;--nv-dark-bg:#14171c;--nv-fallback-ff:Lucida Sans Unicode, Lucida Grande, sans-serif}html.wp-dark-mode-active{--wp-dark-mode-bg:#1B2836;--wp-dark-mode-text:#fff;--wp-dark-mode-link:#459BE6;--wp-dark-mode-border:#394654;--wp-dark-mode-btn:#2f3c4a}body{background-color:var(--nv-site-bg);color:var(--nv-primary-accent);font-family:Poppins,var(--nv-fallback-ff);font-size:15px}html.wp-dark-mode-active body{background-color:var(--wp-dark-mode-bg);color:var(--wp-dark-mode-text)}@media (min-width:576px){body,.site-title{font-size:16px;line-height:1.6;letter-spacing:0px}}@media (min-width:960px){body,.site-title{font-size:17px;line-height:1.7;letter-spacing:0px}}#toggle-dark-mode{cursor:pointer}#toggle-dark-mode:hover{color:var(--wp-dark-mode-link)}html.wp-dark-mode-active a:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a *:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a:active:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a:active *:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a:visited:not(.wp-dark-mode-ignore),html.wp-dark-mode-active a:visited *:not(.wp-dark-mode-ignore){color:var(--wp-dark-mode-link) !important}a{text-decoration:none}a:hover{text-decoration:underline}
 </style><script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
 </head>
 
 <body>
-    <div id="toggle-dark-mode" style="position: absolute; margin-left: 350px;">Toggle Dark Mode</div>
-    <div class="subathon-results-container">
-        <div class="subathon-results wp-dark-mode-ignore">
-            <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto" type="text/css" media="all"><style>
+    <div id="content">
+        <div id="toggle-dark-mode" style="position: absolute; margin-left: 350px;">Toggle Dark Mode</div>
+        <div class="subathon-results-container">
+            <div class="subathon-results wp-dark-mode-ignore">
+                <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto" type="text/css" media="all"><style>
 #content .subathon-results-container{margin:0 auto;max-width:1650px}#content .subathon-results{--wp-subathon-color:#459BE6;margin:20px;line-height:normal}#content .subathon-results label{margin-bottom:0px}#content .subathon-results a{color:#b400ff}#content .subathon-results p{display:none}#content .subathon-results h3{font-size:1.25em;line-height:1em;font-weight:normal;margin-block-start:0;margin-block-end:.5em}#content .subathon-results h4{font-size:1.1em;line-height:1em;font-weight:normal;margin-block-start:0;margin-block-end:.5em}@media only screen and (max-width:576px){#content .subathon-results h4{font-size:.95em}}#content .subathon-results .subathon-note{font-size:.7em;color:gray !important}#content .subathon-results .subathon-show-small{display:none}@media only screen and (max-width:960px){#content .subathon-results .subathon-hide-small{display:none}#content .subathon-results .subathon-show-small{display:block}}@media only screen and (max-width:576px){#content .subathon-results{margin:10px}}#content .subathon-results .subathon-intro-video{margin:20px 0px;text-align:center}#content .subathon-results .subathon-intro-video iframe{width:800px;height:450px}@media only screen and (max-width:960px){#content .subathon-results .subathon-intro-video{position:relative;width:100%;height:0px;padding-bottom:56.25%}#content .subathon-results .subathon-intro-video iframe{position:absolute;top:0;left:0;width:100%;height:100%}}#content .subathon-results .subathon-timeline{position:relative;flex-basis:800px;flex-grow:1}#content .subathon-results .subathon-timeline .subathon-timeline-container{height:400px;margin-left:-10px}@media only screen and (max-width:576px){#content .subathon-results .subathon-timeline .subathon-timeline-container{height:250px}#content .subathon-results .subathon-timeline .subathon-timeline-container text{font-size:8px}}#content .subathon-results .subathon-timeline .subathon-timeline-header{position:absolute;margin-top:-400px;width:100%;grid-template-columns:repeat(auto-fit, 165px);display:flex;justify-content:space-between}@media only screen and (max-width:576px){#content .subathon-results .subathon-timeline .subathon-timeline-header{margin-top:-250px}}#content .subathon-results .subathon-timeline .subathon-timeline-header .subathon-timeline-buttons{margin-right:150px;user-select:none}#content .subathon-results .subathon-timeline .subathon-timeline-header .subathon-timeline-buttons>div{display:inline-block;font-size:10px;border:1px solid;padding:0px 2px;border-radius:2px;cursor:pointer;vertical-align:top;margin-top:3px;margin-left:5px;border-color:#6E8192 !important;color:#6E8192 !important}@media only screen and (max-width:576px){#content .subathon-results .subathon-timeline .subathon-timeline-header .subathon-timeline-buttons>div{font-size:8px;margin-top:5px;margin-left:0px}}html.wp-dark-mode-active #content .subathon-results .subathon-timeline .subathon-timeline-header .subathon-timeline-buttons>div{border-color:#f3f4f5 !important;color:#f3f4f5 !important}html.wp-dark-mode-active #content .subathon-results .subathon-timeline .subathon-timeline-header .subathon-timeline-buttons>div.selected{border-color:#008FFB !important;color:#008FFB !important}#content .subathon-results .subathon-timeline .subathon-timeline-header .subathon-timeline-buttons>div.selected{border-color:#008FFB !important;color:#008FFB !important}#content .subathon-results .subathon-timeline .subathon-clickable-event{cursor:pointer;fill:var(--wp-subathon-color)}#content .subathon-results .subathon-timeline .subathon-clickable-event:hover{fill:#000}html.wp-dark-mode-active #content .subathon-results .subathon-timeline .subathon-clickable-event:hover{fill:#eee}#content .subathon-results .subathon-timeline .apexcharts-marker{display:none}#content .subathon-results .subathon-timeline .subathon-note{font-size:.7em;color:gray !important}#content .subathon-results .subathon-totals{width:200px}@media only screen and (max-width:960px){#content .subathon-results .subathon-totals{width:100%;display:flex;justify-content:space-between}}@media only screen and (max-width:700px){#content .subathon-results .subathon-totals .subathon-card{width:190px}}@media only screen and (max-width:660px){#content .subathon-results .subathon-totals .subathon-card{width:165px}}@media only screen and (max-width:576px){#content .subathon-results .subathon-totals{display:grid;grid-template-columns:fit-content(100%) auto;grid-gap:10px 20px;max-width:350px}#content .subathon-results .subathon-totals .subathon-card{width:165px}}@media only screen and (max-width:380px){#content .subathon-results .subathon-totals{grid-gap:10px 10px}}#content .subathon-results .subathon-totals .subathon-note{font-size:.6em;color:gray !important}#content .subathon-results .subathon-timeline-grid{display:grid;grid-template-columns:fit-content(100%) auto;grid-gap:20px 34px;align-items:start}@media only screen and (max-width:960px){#content .subathon-results .subathon-timeline-grid{grid-template-columns:none;grid-template-rows:auto auto}}#content .subathon-results .subathon-timeline-grid>div:last-child{display:grid;grid-gap:20px 34px}#content .subathon-results .subathon-rows{display:grid;grid-template-rows:auto;row-gap:20px}#content .subathon-results .subathon-grid{display:grid;grid-template-columns:repeat(auto-fit, 200px);grid-gap:20px 34px;margin-top:20px}@media only screen and (max-width:700px){#content .subathon-results .subathon-grid{grid-template-columns:repeat(auto-fit, 190px);grid-gap:20px 20px}}@media only screen and (max-width:576px){#content .subathon-results .subathon-grid{grid-template-columns:repeat(auto-fit, 165px);grid-gap:10px 20px}}@media only screen and (max-width:380px){#content .subathon-results .subathon-grid{grid-template-columns:repeat(auto-fit, 165px);grid-gap:10px 10px}}#content .subathon-results hr{display:block;border:0px;border-top:1px solid darkslategray;margin:3px 0px}#content .subathon-results div.subathon-card{width:200px;margin-bottom:10px}#content .subathon-results div.subathon-card>div{display:flex;justify-content:space-between}#content .subathon-results div.subathon-card>div label{color:var(--wp-subathon-color) !important;display:block}#content .subathon-results div.subathon-card>div label img{vertical-align:middle}#content .subathon-results div.subathon-card>div span{text-align:end}#content .subathon-results div.subathon-card div.subathon-card-comment{display:flex;justify-content:flex-start;align-items:center}#content .subathon-results div.subathon-card div.subathon-card-comment label{text-align:center;font-size:.6em}#content .subathon-results div.subathon-card div.subathon-card-comment span{display:block;font-size:.7em;text-align:center}#content .subathon-results div.subathon-card div.subathon-card-comment>div{margin:2px}#content .subathon-results div.subathon-card div.subathon-card-side{display:flex;justify-content:space-between}#content .subathon-results div.subathon-card div.subathon-card-side label{text-align:center;font-size:.6em}#content .subathon-results div.subathon-card div.subathon-card-side span{display:block;font-size:.82em;text-align:center}#content .subathon-results div.subathon-card div.subathon-card-side>div{margin:2px}#content .subathon-results div.subathon-leaderboard div.subathon-leaderboard-items{width:100%}#content .subathon-results div.subathon-leaderboard div.subathon-leaderboard-items div{width:200px;font-size:.82em;display:flex;justify-content:space-between}@media only screen and (max-width:700px){#content .subathon-results div.subathon-leaderboard div.subathon-leaderboard-items div{width:190px}}@media only screen and (max-width:576px){#content .subathon-results div.subathon-leaderboard div.subathon-leaderboard-items div{width:165px;font-size:.75em}}#content .subathon-results div.subathon-leaderboard div.subathon-leaderboard-items div label{color:var(--wp-subathon-color) !important}#content .subathon-results div.subathon-leaderboard div.subathon-leaderboard-items div span{text-align:right;float:right}#content .subathon-results div.subathon-leaderboard div.subathon-leaderboard-items div.subathon-leaderboard-remainder label{font-style:italic;color:gray !important}#content .subathon-results div.subathon-leaderboard div.subathon-leaderboard-items div.subathon-leaderboard-remainder span{color:gray}#content .subathon-results div.subathon-multicolumn div.subathon-leaderboard{max-width:1400px}#content .subathon-results div.subathon-multicolumn div.subathon-leaderboard div.subathon-leaderboard-items{width:100%;column-width:200px;column-gap:34px}#content .subathon-results div.subathon-multicolumn div.subathon-leaderboard div.subathon-leaderboard-items>div{break-inside:avoid;page-break-inside:avoid}@media only screen and (max-width:700px){#content .subathon-results div.subathon-multicolumn div.subathon-leaderboard div.subathon-leaderboard-items{column-width:190px;column-gap:20px}}@media only screen and (max-width:576px){#content .subathon-results div.subathon-multicolumn div.subathon-leaderboard div.subathon-leaderboard-items{column-width:165px;column-gap:20px}}@media only screen and (max-width:380px){#content .subathon-results div.subathon-multicolumn div.subathon-leaderboard div.subathon-leaderboard-items{column-gap:10px}}#content .subathon-results .subathon-subgoal-list{margin:0px auto}#content .subathon-results .subathon-subgoal-list .subathon-note{font-size:.7em;color:gray !important}#content .subathon-results .subathon-subgoal-list>div{text-align:center}#content .subathon-results .subathon-subgoal-list table{width:initial;border-spacing:20px 0px;margin:0px auto}#content .subathon-results .subathon-subgoal-list table td,#content .subathon-results .subathon-subgoal-list table th{border-bottom-width:0px;padding:0px 10px}@media only screen and (max-width:576px){#content .subathon-results .subathon-subgoal-list table td,#content .subathon-results .subathon-subgoal-list table th{padding:0px 5px}}#content .subathon-results .subathon-subgoal-list table tr td{font-size:.82em}@media only screen and (max-width:576px){#content .subathon-results .subathon-subgoal-list table tr td{font-size:.75em}}#content .subathon-results .subathon-subgoal-list table tr td:nth-child(1){text-align:right;font-family:Roboto;color:var(--wp-subathon-color) !important}#content .subathon-results .subathon-subgoal-list table tr td:nth-child(3){color:gray !important;font-size:.86em}@media only screen and (max-width:700px){#content .subathon-results .subathon-subgoal-list table tr td:nth-child(3){font-size:.75em}}@media only screen and (max-width:576px){#content .subathon-results .subathon-subgoal-list table tr td:nth-child(3){display:none}}#content .subathon-results .subathon-subgoal-list table tr td:nth-child(3)>span{color:var(--wp-subathon-color) !important}
 </style>
-            <div>
-                <h3>PiG Subathon Results</h3>
-                <div class="subathon-intro-video"><iframe src="https://www.youtube.com/embed/ZOo4vlMHFbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <div class="subathon-rows">
-                <div class="subathon-timeline-grid">
-                    <div>
-                        <h4>Totals</h4>
-                        <div class="subathon-totals">
-                            <div class="subathon-card-section">
-                                <div class="subathon-card subathon-hide-small">
-                                    <div><label>Supporters</label><span>1506</span></div>
-                                </div>
-                                <hr class="subathon-hide-small">
-                                <div class="subathon-card">
-                                    <div><label>Subs</label><span>16269</span></div>
-                                    <div class="subathon-card-side">
-                                        <div><label>Prime</label><span>603</span></div>
-                                        <div><label>Tier 1</label><span>15645</span></div>
-                                        <div><label>Tier 2</label><span>17</span></div>
-                                        <div><label>Tier 3</label><span>4</span></div>
+                <div>
+                    <h3>PiG Subathon Results</h3>
+                    <div class="subathon-intro-video"><iframe src="https://www.youtube.com/embed/ZOo4vlMHFbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+                <div class="subathon-rows">
+                    <div class="subathon-timeline-grid">
+                        <div>
+                            <h4>Totals</h4>
+                            <div class="subathon-totals">
+                                <div class="subathon-card-section">
+                                    <div class="subathon-card subathon-hide-small">
+                                        <div><label>Supporters</label><span>1506</span></div>
+                                    </div>
+                                    <hr class="subathon-hide-small">
+                                    <div class="subathon-card">
+                                        <div><label>Subs</label><span>16269</span></div>
+                                        <div class="subathon-card-side">
+                                            <div><label>Prime</label><span>603</span></div>
+                                            <div><label>Tier 1</label><span>15645</span></div>
+                                            <div><label>Tier 2</label><span>17</span></div>
+                                            <div><label>Tier 3</label><span>4</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="subathon-card">
+                                        <div><label>Bits</label><span>437196</span></div>
+                                    </div>
+                                    <div class="subathon-card">
+                                        <div><label>Donations</label><span>$ 5334.59</span></div>
+                                    </div>
+                                    <hr>
+                                    <div class="subathon-card">
+                                        <div><label>Gifted Subs</label><span>15027</span></div>
+                                        <div class="subathon-card-side">
+                                            <div><label>Gifters</label><span>581</span></div>
+                                            <div><label>Paid Forward</label><span>257</span> </div>
+                                            <div><label data-tool>Snipers</label><span>29</span></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="subathon-card">
-                                    <div><label>Bits</label><span>437196</span></div>
-                                </div>
-                                <div class="subathon-card">
-                                    <div><label>Donations</label><span>$ 5334.59</span></div>
-                                </div>
-                                <hr>
-                                <div class="subathon-card">
-                                    <div><label>Gifted Subs</label><span>15027</span></div>
-                                    <div class="subathon-card-side">
-                                        <div><label>Gifters</label><span>581</span></div>
-                                        <div><label>Paid Forward</label><span>257</span> </div>
-                                        <div><label data-tool>Snipers</label><span>29</span></div>
+                                <div class="subathon-card-section">
+                                    <div class="subathon-card subathon-show-small">
+                                        <div><label>Supporters</label><span>1506</span></div>
+                                    </div>
+                                    <hr>
+                                    <div class="subathon-card">
+                                        <div><label>Messages</label><span>345395</span></div>
+                                        <div class="subathon-card-comment"><label>by</label><span>&nbsp;9189&nbsp;</span><label>chatters</label></div>
+                                    </div>
+                                    <div class="subathon-card">
+                                        <div><label>Bacon <img width="16" height="16" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAHlBMVEX////608/GcFGXMBC6ZEXVakmXMBDVakn608+6ZEVjmXgnAAAABnRSTlMAAAAAAABupgeRAAAAAW9yTlQBz6J3mgAAAMlJREFUGNNN0bGOwjAMBuBwQp3P3TpyG9tVx8LOwozYERG+5gGuzhPYYWWo3LeluTZpvH2yftuSjalupqjNLxqY63Ni5flmChIPBZ1Idy8Z8LnLaae+55VHFe5s5mEUcWwTt2fxqGgLEgZuZ25ASXpUmyk+9PjfjmwC0eTXQtAgXtDtFjZjiO1EiHF2NnOKB8Q2sR6F2GGbCGO8zS6Er7NS74bvhXBSmXYNibCPp7vMOFzumbUK+b9MaLpAj5VwHPi6vuPjZ/+4vAG1E1L44bamPgAAAABJRU5ErkJggg=="></label><span>113318</span></div>
+                                        <div class="subathon-card-comment"><label>by</label><span>&nbsp;1311&nbsp;</span><label>spammers</label></div>
+                                    </div>
+                                    <div class="subathon-card">
+                                        <div><label>Raids</label><span>105</span></div>
+                                        <div class="subathon-card-comment"><label>by</label><span>&nbsp;51&nbsp;</span><label>raiders with</label><span>&nbsp;22534&nbsp;</span><label>viewers</label></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="subathon-card-section">
-                                <div class="subathon-card subathon-show-small">
-                                    <div><label>Supporters</label><span>1506</span></div>
-                                </div>
-                                <hr>
-                                <div class="subathon-card">
-                                    <div><label>Messages</label><span>345395</span></div>
-                                    <div class="subathon-card-comment"><label>by</label><span>&nbsp;9189&nbsp;</span><label>chatters</label></div>
-                                </div>
-                                <div class="subathon-card">
-                                    <div><label>Bacon <img width="16" height="16" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAHlBMVEX////608/GcFGXMBC6ZEXVakmXMBDVakn608+6ZEVjmXgnAAAABnRSTlMAAAAAAABupgeRAAAAAW9yTlQBz6J3mgAAAMlJREFUGNNN0bGOwjAMBuBwQp3P3TpyG9tVx8LOwozYERG+5gGuzhPYYWWo3LeluTZpvH2yftuSjalupqjNLxqY63Ni5flmChIPBZ1Idy8Z8LnLaae+55VHFe5s5mEUcWwTt2fxqGgLEgZuZ25ASXpUmyk+9PjfjmwC0eTXQtAgXtDtFjZjiO1EiHF2NnOKB8Q2sR6F2GGbCGO8zS6Er7NS74bvhXBSmXYNibCPp7vMOFzumbUK+b9MaLpAj5VwHPi6vuPjZ/+4vAG1E1L44bamPgAAAABJRU5ErkJggg=="></label><span>113318</span></div>
-                                    <div class="subathon-card-comment"><label>by</label><span>&nbsp;1311&nbsp;</span><label>spammers</label></div>
-                                </div>
-                                <div class="subathon-card">
-                                    <div><label>Raids</label><span>105</span></div>
-                                    <div class="subathon-card-comment"><label>by</label><span>&nbsp;51&nbsp;</span><label>raiders with</label><span>&nbsp;22534&nbsp;</span><label>viewers</label></div>
-                                </div>
-                            </div>
-                            <div class="subathon-card-section">
-                                <hr class="subathon-hide-small">
-                                <div class="subathon-card">
-                                    <div><label>Subathon</label><span>749.7 h</span></div>
-                                    <div class="subathon-card-side">
-                                        <div><label>Real Time</label><span>803.8 h</span> </div>
-                                        <div><label>Paused</label><span>52.5 h</span> </div>
-                                        <div><label>Unpaused</label><span>751.2 h</span> </div>
+                                <div class="subathon-card-section">
+                                    <hr class="subathon-hide-small">
+                                    <div class="subathon-card">
+                                        <div><label>Subathon</label><span>749.7 h</span></div>
+                                        <div class="subathon-card-side">
+                                            <div><label>Real Time</label><span>803.8 h</span> </div>
+                                            <div><label>Paused</label><span>52.5 h</span> </div>
+                                            <div><label>Unpaused</label><span>751.2 h</span> </div>
+                                        </div>
+                                        <div class="subathon-card-side">
+                                            <div><label>Streaming</label><span>787.1 h</span> </div>
+                                            <div><label>Paused</label><span>37.4 h</span> </div>
+                                            <div><label>Unpaused</label><span>749.7 h</span></div>
+                                        </div>
+                                        <div class="subathon-note">Real Time is from start to the end of the subathon including downtime. Streaming is when the stream was live excluding subathon intro and ending. Total time live was 788.0 h.</div>
                                     </div>
-                                    <div class="subathon-card-side">
-                                        <div><label>Streaming</label><span>787.1 h</span> </div>
-                                        <div><label>Paused</label><span>37.4 h</span> </div>
-                                        <div><label>Unpaused</label><span>749.7 h</span></div>
-                                    </div>
-                                    <div class="subathon-note">Real Time is from start to the end of the subathon including downtime. Streaming is when the stream was live excluding subathon intro and ending. Total time live was 788.0 h.</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="subathon-timeline">
-                            <h4>Countdown Timer</h4>
-                            <div class="subathon-timeline-container">
-                                <div id="subathon-countdown-timeline"></div>
-                            </div>
-                            <div class="subathon-timeline-header">
-                                <div></div>
-                                <div class="subathon-timeline-buttons">
-                                    <div id="subathon-countdown-timeline-show-clips" class="selected">Show Clips</div>
-                                    <div id="subathon-countdown-timeline-show-paused" class="selected">Show Paused</div>
-                                    <div id="subathon-countdown-timeline-show-broken" class="selected">Show Broken Timer</div>
+                        <div>
+                            <div class="subathon-timeline">
+                                <h4>Countdown Timer</h4>
+                                <div class="subathon-timeline-container">
+                                    <div id="subathon-countdown-timeline"></div>
                                 </div>
-                            </div>
-                            <div class="subathon-note">Note: The timer was paused during ESL Casting and stream crashes.<br> Red regions are when the timer broke and subs+bits weren't added. Corrections were made after the timer was restarted. We switched to a different timer later in the subathon.</div>
-                            <link href="https://cdn.jsdelivr.net/npm/lity@2.4.1/dist/lity.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/apexcharts@3.27.1/dist/apexcharts.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lity@2.4.1/dist/lity.min.js"></script><script>{const x=[{x:1620766286e3,y:0},{x:1620766286e3,y:14400},{x:1620766429040,y:14400},{x:1620767284315,y:14400},{x:1620767323063,y:14400},{x:1620767328316,y:14400},{x:1620767380390,y:14400},{x:1620767395536,y:14400},{x:1620767422758,y:14400},{x:1620767472570,y:14400},{x:1620767482354,y:14400},{x:1620767490471,y:14400},{x:1620767524386,y:14400},{x:1620767582798,y:14400},{x:1620767598341,y:14400},{x:1620767620337,y:14400},{x:1620767622508,y:14400},{x:1620767682508,y:14340},{x:1620767682508,y:21240},{x:1620767684580,y:21237.928},{x:1620767684580,y:21387.928},{x:1620767696023,y:21376.485},{x:1620767696023,y:22126.485},{x:1620767697542,y:22124.966},{x:1620767697542,y:24524.966},{x:1620767730802,y:24491.706},{x:1620767730802,y:37841.706},{x:1620767741114,y:37831.394},{x:1620767741114,y:37861.394},{x:1620767893942,y:37708.566},{x:1620767893942,y:37858.566},{x:1620767991417,y:37761.091},{x:1620767991417,y:38061.091},{x:1620768144978,y:37907.53},{x:1620768144978,y:38657.53},{x:1620768197656,y:38604.852},{x:1620768197656,y:38754.852},{x:1620768206463,y:38746.045},{x:1620768206463,y:38896.045},{x:1620768212972,y:38889.536},{x:1620768212972,y:39039.536},{x:1620768248319,y:39004.189},{x:1620768248319,y:39337.489},{x:1620768763558,y:38822.25},{x:1620768763558,y:38972.25},{x:1620768806724,y:38929.084},{x:1620768806724,y:39679.084},{x:1620768807526,y:39678.282},{x:1620768807526,y:39828.282},{x:1620768900299,y:39735.509},{x:1620768900299,y:40485.509},{x:1620768945674,y:40440.134},{x:1620768945674,y:41190.134},{x:1620768948391,y:41187.417},{x:1620768948391,y:43587.417},{x:1620769020770,y:43515.038},{x:1620769020770,y:43665.038},{x:1620769078194,y:43607.614},{x:1620769078194,y:44957.614},{x:1620769091757,y:44944.051},{x:1620769525297,y:44510.511},{x:1620769525297,y:44660.511},{x:1620769582621,y:44603.187},{x:1620769582621,y:44753.187},{x:1620769743355,y:44592.453},{x:1620769743355,y:44742.453},{x:1620769793346,y:44692.462},{x:1620769793346,y:44842.462},{x:1620769795377,y:44840.431},{x:1620769795377,y:45590.431},{x:1620769861543,y:45524.265},{x:1620769861543,y:45656.565},{x:1620769979601,y:45538.507},{x:1620769979601,y:45688.507},{x:1620770090593,y:45577.515},{x:1620770090593,y:45727.515},{x:1620770117591,y:45700.517},{x:1620770117591,y:45850.517},{x:1620770134204,y:45833.904},{x:1620770134204,y:45923.904},{x:1620770401910,y:45656.198},{x:1620770401910,y:45806.198},{x:1620770430731,y:45777.377},{x:1620770430731,y:45927.377},{x:1620770457659,y:45900.449},{x:1620770457659,y:46050.449},{x:1620770499424,y:46008.684},{x:1620770499424,y:46158.684},{x:1620770756156,y:45901.952},{x:1620770756156,y:46051.952},{x:1620770790765,y:46017.343},{x:1620770790765,y:46467.343},{x:1620770928874,y:46329.234},{x:1620770928874,y:46479.234},{x:1620770961505,y:46446.603},{x:1620770961505,y:46596.603},{x:1620771055399,y:46502.709},{x:1620771055399,y:46652.709},{x:1620771078394,y:46629.714},{x:1620771078394,y:46779.714},{x:1620771330383,y:46527.725},{x:1620771330383,y:46677.725},{
+                                <div class="subathon-timeline-header">
+                                    <div></div>
+                                    <div class="subathon-timeline-buttons">
+                                        <div id="subathon-countdown-timeline-show-clips" class="selected">Show Clips</div>
+                                        <div id="subathon-countdown-timeline-show-paused" class="selected">Show Paused</div>
+                                        <div id="subathon-countdown-timeline-show-broken" class="selected">Show Broken Timer</div>
+                                    </div>
+                                </div>
+                                <div class="subathon-note">Note: The timer was paused during ESL Casting and stream crashes.<br> Red regions are when the timer broke and subs+bits weren't added. Corrections were made after the timer was restarted. We switched to a different timer later in the subathon.</div>
+                                <link href="https://cdn.jsdelivr.net/npm/lity@2.4.1/dist/lity.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/apexcharts@3.27.1/dist/apexcharts.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lity@2.4.1/dist/lity.min.js"></script><script>{const x=[{x:1620766286e3,y:0},{x:1620766286e3,y:14400},{x:1620766429040,y:14400},{x:1620767284315,y:14400},{x:1620767323063,y:14400},{x:1620767328316,y:14400},{x:1620767380390,y:14400},{x:1620767395536,y:14400},{x:1620767422758,y:14400},{x:1620767472570,y:14400},{x:1620767482354,y:14400},{x:1620767490471,y:14400},{x:1620767524386,y:14400},{x:1620767582798,y:14400},{x:1620767598341,y:14400},{x:1620767620337,y:14400},{x:1620767622508,y:14400},{x:1620767682508,y:14340},{x:1620767682508,y:21240},{x:1620767684580,y:21237.928},{x:1620767684580,y:21387.928},{x:1620767696023,y:21376.485},{x:1620767696023,y:22126.485},{x:1620767697542,y:22124.966},{x:1620767697542,y:24524.966},{x:1620767730802,y:24491.706},{x:1620767730802,y:37841.706},{x:1620767741114,y:37831.394},{x:1620767741114,y:37861.394},{x:1620767893942,y:37708.566},{x:1620767893942,y:37858.566},{x:1620767991417,y:37761.091},{x:1620767991417,y:38061.091},{x:1620768144978,y:37907.53},{x:1620768144978,y:38657.53},{x:1620768197656,y:38604.852},{x:1620768197656,y:38754.852},{x:1620768206463,y:38746.045},{x:1620768206463,y:38896.045},{x:1620768212972,y:38889.536},{x:1620768212972,y:39039.536},{x:1620768248319,y:39004.189},{x:1620768248319,y:39337.489},{x:1620768763558,y:38822.25},{x:1620768763558,y:38972.25},{x:1620768806724,y:38929.084},{x:1620768806724,y:39679.084},{x:1620768807526,y:39678.282},{x:1620768807526,y:39828.282},{x:1620768900299,y:39735.509},{x:1620768900299,y:40485.509},{x:1620768945674,y:40440.134},{x:1620768945674,y:41190.134},{x:1620768948391,y:41187.417},{x:1620768948391,y:43587.417},{x:1620769020770,y:43515.038},{x:1620769020770,y:43665.038},{x:1620769078194,y:43607.614},{x:1620769078194,y:44957.614},{x:1620769091757,y:44944.051},{x:1620769525297,y:44510.511},{x:1620769525297,y:44660.511},{x:1620769582621,y:44603.187},{x:1620769582621,y:44753.187},{x:1620769743355,y:44592.453},{x:1620769743355,y:44742.453},{x:1620769793346,y:44692.462},{x:1620769793346,y:44842.462},{x:1620769795377,y:44840.431},{x:1620769795377,y:45590.431},{x:1620769861543,y:45524.265},{x:1620769861543,y:45656.565},{x:1620769979601,y:45538.507},{x:1620769979601,y:45688.507},{x:1620770090593,y:45577.515},{x:1620770090593,y:45727.515},{x:1620770117591,y:45700.517},{x:1620770117591,y:45850.517},{x:1620770134204,y:45833.904},{x:1620770134204,y:45923.904},{x:1620770401910,y:45656.198},{x:1620770401910,y:45806.198},{x:1620770430731,y:45777.377},{x:1620770430731,y:45927.377},{x:1620770457659,y:45900.449},{x:1620770457659,y:46050.449},{x:1620770499424,y:46008.684},{x:1620770499424,y:46158.684},{x:1620770756156,y:45901.952},{x:1620770756156,y:46051.952},{x:1620770790765,y:46017.343},{x:1620770790765,y:46467.343},{x:1620770928874,y:46329.234},{x:1620770928874,y:46479.234},{x:1620770961505,y:46446.603},{x:1620770961505,y:46596.603},{x:1620771055399,y:46502.709},{x:1620771055399,y:46652.709},{x:1620771078394,y:46629.714},{x:1620771078394,y:46779.714},{x:1620771330383,y:46527.725},{x:1620771330383,y:46677.725},{
 x:1620771397841,y:46610.267},{x:1620771397841,y:46910.267},{x:1620771532143,y:46775.965},{x:1620771532143,y:46925.965},{x:1620771548807,y:46909.301},{x:1620771548807,y:47059.301},{x:1620771650037,y:46958.071},{x:1620771650037,y:46978.771},{x:1620771652380,y:46976.428},{x:1620771652380,y:47102.428},{x:1620771691341,y:47063.467},{x:1620771691341,y:47093.467},{x:1620771849906,y:46934.902},{x:1620771849906,y:46964.902},{x:1620772250671,y:46564.137},{x:1620772250671,y:47314.137},{x:1620772261216,y:47303.592},{x:1620772261216,y:48053.592},{x:1620773362789,y:46952.019},{x:1620773362789,y:47102.019},{x:1620773366404,y:47098.404},{x:1620773366404,y:47128.404},{x:1620773392156,y:47102.652},{x:1620773392156,y:47852.652},{x:1620773474528,y:47770.28},{x:1620773474528,y:47920.28},{x:1620773786646,y:47608.162},{x:1620773786646,y:47638.162},{x:1620773841909,y:47582.899},{x:1620773841909,y:47732.899},{x:1620773868930,y:47705.878},{x:1620773868930,y:47855.878},{x:1620774077766,y:47647.042},{x:1620774077766,y:48397.042},{x:1620774260894,y:48213.914},{x:1620774260894,y:48218.414},{x:1620774605539,y:47873.769},{x:1620774605539,y:47963.769},{x:1620774661781,y:47907.527},{x:1620774661781,y:48357.527},{x:1620775294169,y:47725.139},{x:1620775294169,y:47875.139},{x:1620775337403,y:47831.905},{x:1620775337403,y:48431.905},{x:1620775407996,y:48361.312},{x:1620775407996,y:48511.312},{x:1620775474307,y:48445.001},{x:1620775474307,y:48595.001},{x:1620775499812,y:48569.496},{x:1620775499812,y:49319.496},{x:1620775531202,y:49288.106},{x:1620775531202,y:49438.106},{x:1620775548541,y:49420.767},{x:1620775548541,y:49570.767},{x:1620775578215,y:49541.093},{x:1620775578215,y:49691.093},{x:1620776155704,y:49113.604},{x:1620776155704,y:49863.604},{x:1620776613252,y:49406.056},{x:1620776613252,y:49556.056},{x:1620776627043,y:49542.265},{x:1620776627043,y:49692.265},{x:1620776654282,y:49665.026},{x:1620776654282,y:51165.026},{x:1620776681721,y:51137.587},{x:1620776681721,y:51437.587},{x:1620776870111,y:51249.197},{x:1620776870111,y:51399.197},{x:1620776901323,y:51367.985},{x:1620776901323,y:51397.985},{x:1620776927864,y:51371.444},{x:1620776927864,y:51401.444},{x:1620776952545,y:51376.763},{x:1620776952545,y:51676.763},{x:1620776971840,y:51657.468},{x:1620776971840,y:51957.468},{x:1620777273393,y:51655.915},{x:1620777273393,y:53005.915},{x:1620777754087,y:52525.221},{x:1620777754087,y:52675.221},{x:1620777856783,y:52572.525},{x:1620777856783,y:52722.525},{x:1620777863034,y:52716.274},{x:1620777863034,y:53016.274},{x:1620778028891,y:52850.417},{x:1620778028891,y:53600.417},{x:1620778040979,y:53588.329},{x:1620778040979,y:53738.329},{x:1620778201190,y:53578.118},{x:1620778201190,y:53728.118},{x:1620778466510,y:53462.798},{x:1620778466510,y:53612.798},{x:1620778881316,y:53197.992},{x:1620778881316,y:53347.992},{x:1620778903740,y:53325.568},{x:1620778903740,y:53475.568},{x:1620778984503,y:53394.805},{x:1620778984503,y:53544.805},{x:1620779574711,y:52954.597},{x:1620779574711,y:53254.597},{
 x:1620779576452,y:53252.856},{x:1620779576452,y:53402.856},{x:1620779637900,y:53341.408},{x:1620779637900,y:54091.408},{x:1620779755797,y:53973.511},{x:1620779755797,y:54123.511},{x:1620779807438,y:54071.87},{x:1620779807438,y:54161.87},{x:1620779850746,y:54118.562},{x:1620779850746,y:55018.562},{x:1620780070298,y:54799.01},{x:1620780070298,y:54949.01},{x:1620780087648,y:54931.66},{x:1620780087648,y:55231.66},{x:1620780130073,y:55189.235},{x:1620780130073,y:55339.235},{x:1620780153255,y:55316.053},{x:1620780153255,y:55466.053},{x:1620780219782,y:55399.526},{x:1620780219782,y:55549.526},{x:1620780255840,y:55513.468},{x:1620780255840,y:55663.468},{x:1620780502731,y:55416.577},{x:1620780502731,y:56166.577},{x:1620780546167,y:56123.141},{x:1620780546167,y:56153.141},{x:1620780645293,y:56054.015},{x:1620780645293,y:56204.015},{x:1620780947558,y:55901.75},{x:1620780947558,y:56051.75},{x:1620781253631,y:55745.677},{x:1620781253631,y:56495.677},{x:1620781376165,y:56373.143},{x:1620781376165,y:56523.143},{x:1620781634356,y:56264.952},{x:1620781634356,y:57764.952},{x:1620781687167,y:57712.141},{x:1620781687167,y:57862.141},{x:1620781709485,y:57839.823},{x:1620781709485,y:58139.823},{x:1620781728771,y:58120.537},{x:1620781728771,y:58870.537},{x:1620781766050,y:58833.258},{x:1620781766050,y:58863.258},{x:1620781785992,y:58843.316},{x:1620781785992,y:58993.316},{x:1620781963786,y:58815.522},{x:1620781963786,y:58845.522},{x:1620781999848,y:58809.46},{x:1620781999848,y:59109.46},{x:1620782022375,y:59086.933},{x:1620782022375,y:59236.933},{x:1620782072542,y:59186.766},{x:1620782072542,y:60686.766},{x:1620782072824,y:60686.484},{x:1620782072824,y:61436.484},{x:1620782073236,y:61436.072},{x:1620782073236,y:62186.072},{x:1620782137766,y:62121.542},{x:1620782137766,y:62271.542},{x:1620782168613,y:62240.695},{x:1620782168613,y:62990.695},{x:1620782175324,y:62983.984},{x:1620782175324,y:64483.984},{x:1620782175998,y:64483.31},{x:1620782175998,y:64513.31},{x:1620782213028,y:64476.28},{x:1620782213028,y:65226.28},{x:1620782258617,y:65180.691},{x:1620782258617,y:65330.691},{x:1620782446972,y:65142.336},{x:1620782446972,y:65892.336},{x:1620782483504,y:65855.804},{x:1620782483504,y:66005.804},{x:1620782501969,y:65987.339},{x:1620782501969,y:66137.339},{x:1620782516417,y:66122.891},{x:1620782516417,y:67472.891},{x:1620782715929,y:67273.379},{x:1620782715929,y:68773.379},{x:1620783075154,y:68414.154},{x:1620783075154,y:68564.154},{x:1620783772257,y:67867.051},{x:1620783772257,y:69367.051},{x:1620783836985,y:69302.323},{x:1620783836985,y:69452.323},{x:1620784122988,y:69166.32},{x:1620784122988,y:69316.32},{x:1620784845537,y:68593.771},{x:1620784845537,y:68743.771},{x:1620784943186,y:68646.122},{x:1620784943186,y:68796.122},{x:1620785086749,y:68652.559},{x:1620785086749,y:70002.559},{x:1620785272811,y:69816.497},{x:1620785272811,y:69966.497},{x:1620785318853,y:69920.455},{x:1620785318853,y:70070.455},{x:1620785934786,y:69454.522},{x:1620785934786,y:69604.522},{x:1620786345731,
 y:69193.577},{x:1620786345731,y:69343.577},{x:1620786355718,y:69333.59},{x:1620786355718,y:70083.59},{x:1620786407418,y:70031.89},{x:1620786407418,y:70043.89},{x:1620786440860,y:70010.448},{x:1620786440860,y:70160.448},{x:1620786628655,y:69972.653},{x:1620786628655,y:70032.653},{x:1620786724702,y:69936.606},{x:1620786724702,y:70086.606},{x:1620787054674,y:69756.634},{x:1620787054674,y:69906.634},{x:1620787091252,y:69870.056},{x:1620787091252,y:70020.056},{x:1620787705211,y:69406.097},{x:1620787705211,y:69556.097},{x:1620790216488,y:67044.82},{x:1620790216488,y:67194.82},{x:1620790739599,y:66671.709},{x:1620790739599,y:67421.709},{x:1620790991313,y:67169.995},{x:1620790991313,y:67919.995},{x:1620790999858,y:67911.45},{x:1620790999858,y:70911.45},{x:1620791080852,y:70830.456},{x:1620791080852,y:71130.456},{x:1620791175932,y:71035.376},{x:1620791175932,y:71785.376},{x:1620791213907,y:71747.401},{x:1620791213907,y:72347.401},{x:1620791218837,y:72342.471},{x:1620791218837,y:72492.471},{x:1620791591507,y:72119.801},{x:1620791591507,y:72181.001},{x:1620791626192,y:72146.316},{x:1620791626192,y:72296.316},{x:1620791849430,y:72073.078},{x:1620791849430,y:72223.078},{x:1620792322337,y:71750.171},{x:1620792322337,y:71780.171},{x:1620792468526,y:71633.982},{x:1620792468526,y:71783.982},{x:1620792564404,y:71688.104},{x:1620792564404,y:72438.104},{x:1620792620921,y:72381.587},{x:1620792620921,y:72531.587},{x:1620792813783,y:72338.725},{x:1620792813783,y:72488.725},{x:1620792881527,y:72420.981},{x:1620792881527,y:73170.981},{x:1620793284414,y:72768.094},{x:1620793284414,y:72918.094},{x:1620793320340,y:72882.168},{x:1620793320340,y:72912.168},{x:1620794583078,y:71649.43},{x:1620794583078,y:71799.43},{x:1620794842012,y:71540.496},{x:1620794842012,y:71690.496},{x:1620794941938,y:71590.57},{x:1620794941938,y:72340.57},{x:1620795194359,y:72088.149},{x:1620795194359,y:72238.149},{x:1620795265463,y:72167.045},{x:1620795265463,y:72317.045},{x:1620795394041,y:72188.467},{x:1620795394041,y:72338.467},{x:1620795908656,y:71823.852},{x:1620795908656,y:71973.852},{x:1620795996626,y:71885.882},{x:1620795996626,y:72035.882},{x:1620796093355,y:71939.153},{x:1620796093355,y:72089.153},{x:1620797024726,y:71157.782},{x:1620797024726,y:71307.782},{x:1620797294258,y:71038.25},{x:1620797294258,y:71188.25},{x:1620797417143,y:71065.365},{x:1620797417143,y:71365.365},{x:1620797792831,y:70989.677},{x:1620797792831,y:71139.677},{x:1620797797677,y:71134.831},{x:1620797797677,y:71284.831},{x:1620798092656,y:70989.852},{x:1620798092656,y:71139.852},{x:1620798119359,y:71113.149},{x:1620798119359,y:71263.149},{x:1620798170195,y:71212.313},{x:1620798170195,y:71362.313},{x:1620799310848,y:70221.66},{x:1620799310848,y:70371.66},{x:1620800255633,y:69426.875},{x:1620800255633,y:69576.875},{x:1620800275295,y:69557.213},{x:1620800275295,y:69707.213},{x:1620800277850,y:69704.658},{x:1620800277850,y:70154.658},{x:1620800414630,y:70017.878},{x:1620800414630,y:70317.878},{x:1620800472902,y:70259.606},{
@@ -202,861 +203,862 @@ y:2467.2940000000017},{x:1622750482827,y:2021.7379999999976},{x:1622750482827,y:
 x2:1621932165252,isBroken:!0},{x:1621988621388,x2:1621988844247,isBroken:!0},{x:1621999831740,x2:1622012176217,isBroken:!0},{x:1622079370901,x2:1622083887078,isBroken:!0},{x:1622127347548,x2:1622151243497,isBroken:!0},{x:1622341558960,x2:1622352546747,isBroken:!0},{x:1622361366380,x2:1622388255492,isBroken:!0},{x:1622423109572,x2:1622435073994,isBroken:!0},{x:1622450293068,x2:1622450954118,isBroken:!0},{x:1622494983156,x2:1622499353998,isBroken:!0},{x:1622540920288,x2:1622544245248,isBroken:!0},{x:1622685581457,x2:1622687387998,isBroken:!0},{x:1622705443100,x2:1622706638497,isBroken:!0},{x:1622748692856,x2:1622755812747,isBroken:!0}].map(x=>({data:x,id:"anno-"+e,x:new Date(x.x).getTime(),x2:new Date(x.x2).getTime(),fillColor:"rgba(128, 0, 0, 0.8)",borderColor:"rgba(128, 0, 0, 0.8)",opacity:.2,label:{text:x.text,borderWidth:0,style:{fontSize:"10px",color:"#999",background:"#00000000"}}})),n=[{x:162076773e4,y:21255,text:"We're Gonna Be Here for a Few Days",link:"https://www.twitch.tv/videos/1043321990?time=0h23m9s"},{x:1620790801824,y:22374,text:"Innocent PiG",offsetX:20,link:"https://www.twitch.tv/x5_pig/clip/WanderingViscousDovePastaThat-2tt6Fa217TOgYx-G"},{x:1620993273291,y:61451,text:"Shower Stream",link:"https://www.twitch.tv/x5_pig/clip/PluckyTenuousFriesAMPTropPunch-hDgN45dNyNRfQFmO"},{x:1621144093559,y:75744,text:"Inside the Twitch Matrix",link:"https://www.twitch.tv/x5_pig/clip/SmoothSpookyCasetteAsianGlow-woVihJNEvGggzrA7"},{x:1621156004386,y:69315,text:"Cracks Egg",offsetY:25,offsetX:20,link:"https://www.twitch.tv/x5_pig/clip/SecretiveFancyPangolinKappa-6DcdF2e7hZdcl0z_"},{x:1621406366688,y:16765,text:"No-Swearing Challenge",link:"https://www.twitch.tv/x5_pig/clip/RacySpinelessAnacondaTBTacoRight-ryGwblcENnHLNuv4"},{x:1621469003836,y:85247,text:"Fire Alarm",link:"https://www.twitch.tv/x5_pig/clip/ManlyEnthusiasticChimpanzeeJebaited-cLaQ6nrFH5M9eRbU"},{x:1621822210205,text:"Pink Hair",offsetY:100,link:"https://www.twitch.tv/x5_pig/clip/AntediluvianEsteemedLouseDerp-vlzIJfG8SPsJsv-m"},{x:1621825815663,text:"Eau de Pigsty",link:"https://www.twitch.tv/x5_pig/clip/ThoughtfulHelpfulMelonCoolStoryBro-WyGBpidNDFC4qNmN"},{x:1622150775748,y:22374,text:"Dot's Ecstacy and Agony",link:"https://www.twitch.tv/x5_pig/clip/WrongEnchantingCourgetteItsBoshyTime-XeabADQEDzvcmZca"},{x:1622272258079,y:176775,text:"Evil Dot",link:"https://www.twitch.tv/x5_pig/clip/DifficultFreezingRaccoonCharlietheUnicorn-J109RmVtWLAqPj7i"},{x:1622458319970,y:75812,text:"SC:R Disgusting Protoss",link:"https://www.twitch.tv/x5_pig/clip/CalmRoundWolverineTakeNRG-19FhKUkmO5kcHktY"},{x:1623039923723,y:9427,text:"Silicon Valley Money",link:"https://www.twitch.tv/x5_pig/clip/ShortCaringGazelleBatChest--rnkWwXO6kciZxjS"},{x:1622726892462,y:22374,text:"You Shits are Very Lucky",link:"https://www.twitch.tv/x5_pig/clip/MushyGloriousJackalSuperVinlin-9OeJ__oKAaTrNd7A"},{x:1622803896772,y:30267,text:"The Widow Maker",
 link:"https://www.twitch.tv/x5_pig/clip/PrettiestChillyTrollOSkomodo-c4gfmAbeFDAj_A95"},{x:1623574506400,y:76100,text:"Shaving Head",link:"https://www.twitch.tv/x5_pig/clip/InterestingLazyWatermelonTwitchRPG-4x3bVl8mMZpfsUpi"},{x:1623657177434,y:121,text:"Last 90 minutes",link:"https://www.twitch.tv/videos/1065001216?time=0h0m34s"},{x:1623661176892,y:0,text:"Ending and Outro",offsetY:50,offsetX:15,link:"https://www.twitch.tv/videos/1065003816?time=0h0m5s"}].map(x=>({data:x,id:"anno-"+e,x:new Date(x.x).getTime(),borderColor:"#999",opacity:.2,seriesIndex:0,label:{text:x.text,link:x.link,borderWidth:0,offsetX:x.offsetX||0,offsetY:x.offsetY||0,style:{fontSize:"12px",color:"#999",background:"rgba(255, 255, 255, 0.5)",cssClass:"apexcharts-yaxis-annotation-label subathon-clickable-event"}}})),o=[...t,...i,...n],l=window.jQuery;var options={chart:{type:"line",background:"inherited",height:"100%",zoom:{type:"x",enabled:!0},toolbar:{autoSelected:"zoom"},animations:{enabled:!1},markers:{size:[0,0],showNullDataPoints:!1},events:{beforeZoom:(x,{xaxis:y,yaxis:e})=>{let t=0,i=1e7;const n=x.w.globals.seriesX[0],o=x.w.globals.series[0],l=x.w.globals.seriesX[1],a=x.w.globals.series[1];for(let x=0;x<n.length;x++)if(n[x]>=y.min)if(n[x]<=y.max){if(x>0)if(n[x-1]<y.min){const e=o[x-1]+(o[x]-o[x-1])*(y.min-n[x-1])/(n[x]-n[x-1]);t=Math.max(t,e),i=Math.min(i,e)}if(t=Math.max(t,o[x]),i=Math.min(i,o[x]),x<n.length-1)if(n[x+1]>y.max){const e=o[x+1]+(o[x]-o[x+1])*(y.max-n[x+1])/(n[x]-n[x+1]);t=Math.max(t,e),i=Math.min(i,e)}}for(let x=0;x<l.length;x++)if(l[x]>=y.min)if(l[x]<=y.max)if(null!==a[x])t=Math.max(t,a[x]),i=Math.min(i,a[x]);if(t>0){if(i>t/2)t=2*i;if(e)e[0].max=t;else x.w.globals.initialConfig.yaxis[0].max=t}},beforeResetZoom:(x,y)=>({xaxis:{min:new Date("2021-05-11T12:00:00Z").getTime(),max:new Date("2021-06-14T12:00:00Z").getTime()}}),markerClick:(x,y,{seriesIndex:e,dataPointIndex:t,config:i})=>{const o=x.target.textContent,l=n.filter(x=>x.label.text==o)[0];if(l)if(l.label.link)if(0==x.button){const y=l.label.link.match(/https:\/\/www.twitch.tv\/.*?\/clip\/(.*)/),e=l.label.link.match(/https:\/\/www.twitch.tv\/videos\/(\d*)(?:\?(.*))?/);if(x.ctrlKey)window.open(l.label.link,"_blank");else if(y){const x=`//clips.twitch.tv/embed?parent=${document.location.hostname}&autoplay=true&clip=${y[1]}`;lity(x)}else if(e){const x=e[2]?"&"+e[2]:"",y=`//player.twitch.tv/?parent=${document.location.hostname}&autoplay=true&video=${e[1]}${x}`;lity(y)}else window.open(l.label.link,"_blank")}}}},colors:["#459BE6","rgba(192, 192, 192, 0.2)"],series:[{name:"Countdown Timer",data:x},{name:"Corrected Countdown Timer",data:y}],annotations:{xaxis:[]},dataLabels:{enabled:!1},legend:{show:!1},xaxis:{type:"datetime",min:new Date("2021-05-11T12:00:00Z").getTime(),max:new Date("2021-06-14T12:00:00Z").getTime(),labels:{datetimeUTC:!1}},yaxis:{min:0,labels:{formatter:function(x){
 if(Math.abs(x)>3600)return(x/3600).toFixed(1)+" h";else if(Math.abs(x)>60)return(x/60).toFixed(1)+" min";else return x.toFixed(1)+" sec"}}},tooltip:{shared:!1,x:{format:"dd MMM, HH:mm:ss"},y:{formatter:function(x){if(Math.abs(x)>3600)return(x/3600).toFixed(1)+" h";else if(Math.abs(x)>60)return(x/60).toFixed(1)+" min";else return x.toFixed(1)+" sec"}}},grid:{borderColor:"#000000"},stroke:{width:2},theme:{mode:l("html").hasClass("wp-dark-mode-active")?"dark":"light"}},chart=new ApexCharts(document.querySelector("#subathon-countdown-timeline"),options);function updateAnnotations(){const x=l("#subathon-countdown-timeline-show-clips").hasClass("selected"),y=l("#subathon-countdown-timeline-show-paused").hasClass("selected"),e=l("#subathon-countdown-timeline-show-broken").hasClass("selected"),a=l("html").hasClass("wp-dark-mode-active");for(let x of n)if(a)x.label.style.background="rgba(0, 0, 0, 0.4)",x.label.borderWidth=0;else x.label.style.background="rgba(255, 255, 255, 1.0)",x.label.borderWidth=1;for(let x of i)if(a)x.fillColor=x.borderColor="rgba(64, 0, 0, 0.8)";else x.fillColor=x.borderColor="rgba(128, 0, 0, 0.6)";for(let x of o)chart.removeAnnotation(x.id);if(o.splice(0,o.length),y)o.push(...t);if(e)o.push(...i);if(x)o.push(...n);for(let x of o)chart.addXaxisAnnotation(x,!0)}chart.render(),updateAnnotations(),l("#subathon-countdown-timeline-show-clips").click((function(x){l(x.target).toggleClass("selected"),updateAnnotations()})),l("#subathon-countdown-timeline-show-paused").click((function(x){l(x.target).toggleClass("selected"),updateAnnotations()})),l("#subathon-countdown-timeline-show-broken").click((function(x){l(x.target).toggleClass("selected"),updateAnnotations()})),window.addEventListener("wp_dark_mode",(function(x){const y=l("html").hasClass("wp-dark-mode-active");chart.updateOptions({theme:{mode:y?"dark":"light"}}),updateAnnotations()}))}</script>
-                        </div>
-                        <div class="subathon-multicolumn">
-                            <div class="subathon-leaderboard">
-                                <h4>Top Supporters</h4>
-                                <div class="subathon-leaderboard-items">
-                                    <div><label>Graywolf09</label><span>45.8 h</span></div>
-                                    <div><label>apollogod1990</label><span>39.9 h</span></div>
-                                    <div><label>GulNazNihari</label><span>38.6 h</span></div>
-                                    <div><label>BloodFeast_Rambo</label><span>34.9 h</span></div>
-                                    <div><label>thatbroc</label><span>31.5 h</span></div>
-                                    <div><label>algosc2</label><span>22.4 h</span></div>
-                                    <div><label>pyro1821</label><span>20.1 h</span></div>
-                                    <div><label>Evrykind_</label><span>18.0 h</span></div>
-                                    <div><label>spud__doctor</label><span>17.2 h</span></div>
-                                    <div><label>ShamBadger</label><span>15.4 h</span></div>
-                                    <div><label>AnAnonymousGifter</label><span>15.2 h</span></div>
-                                    <div><label>bugsplatter23</label><span>13.0 h</span></div>
-                                    <div><label>Adder82</label><span>11.9 h</span></div>
-                                    <div><label>electricbearcat</label><span>10.8 h</span></div>
-                                    <div><label>The_Original_Pod</label><span>10.7 h</span></div>
-                                    <div><label>SolronHV</label><span>10.3 h</span></div>
-                                    <div><label>CataStarcraft</label><span>9.4 h</span></div>
-                                    <div><label>maratus102</label><span>9.1 h</span></div>
-                                    <div><label>joepro99</label><span>8.8 h</span></div>
-                                    <div><label>maxxsann</label><span>7.9 h</span></div>
-                                    <div><label>feardragon64</label><span>7.7 h</span></div>
-                                    <div><label>MichaelTheArc42</label><span>6.9 h</span></div>
-                                    <div><label>ihal20</label><span>6.7 h</span></div>
-                                    <div><label>SqueakyBJsFTW</label><span>6.3 h</span></div>
-                                    <div><label>Fenrack</label><span>6.1 h</span></div>
-                                    <div><label>GargantuanGuava</label><span>5.3 h</span></div>
-                                    <div><label>raventhon</label><span>5.0 h</span></div>
-                                    <div><label>espertk</label><span>4.5 h</span></div>
-                                    <div><label>oigewan</label><span>4.5 h</span></div>
-                                    <div><label>PI0x_</label><span>4.5 h</span></div>
-                                    <div><label>cascade_fury</label><span>4.3 h</span></div>
-                                    <div><label>IlliterateNerd</label><span>4.2 h</span></div>
-                                    <div><label>aramsham</label><span>4.2 h</span></div>
-                                    <div><label>Somicron</label><span>3.9 h</span></div>
-                                    <div><label>vTriple</label><span>3.8 h</span></div>
-                                    <div><label>LordByrnsy</label><span>3.5 h</span></div>
-                                    <div><label>danmo__</label><span>3.0 h</span></div>
-                                    <div><label>Kilgoretrout512</label><span>2.6 h</span></div>
-                                    <div><label>TypeOne55</label><span>2.5 h</span></div>
-                                    <div><label>Arminius2436</label><span>2.4 h</span></div>
-                                    <div><label>Turora</label><span>2.4 h</span></div>
-                                    <div><label>pslteamcaptain</label><span>2.4 h</span></div>
-                                    <div><label>tekjess</label><span>2.3 h</span></div>
-                                    <div><label>JD1916</label><span>2.2 h</span></div>
-                                    <div><label>hungr4batl</label><span>2.2 h</span></div>
-                                    <div><label>kilokilo23</label><span>2.2 h</span></div>
-                                    <div><label>WillieNelsonsHeadband</label><span>2.2 h</span></div>
-                                    <div><label>knittinkittins</label><span>2.2 h</span></div>
-                                    <div><label>kingslorche</label><span>1.9 h</span></div>
-                                    <div><label>mRitt3r</label><span>1.8 h</span></div>
-                                    <hr>
-                                    <div class="subathon-leaderboard-remainder"><label>Others (1456)</label><span>252.9 h</span></div>
+                            </div>
+                            <div class="subathon-multicolumn">
+                                <div class="subathon-leaderboard">
+                                    <h4>Top Supporters</h4>
+                                    <div class="subathon-leaderboard-items">
+                                        <div><label>Graywolf09</label><span>45.8 h</span></div>
+                                        <div><label>apollogod1990</label><span>39.9 h</span></div>
+                                        <div><label>GulNazNihari</label><span>38.6 h</span></div>
+                                        <div><label>BloodFeast_Rambo</label><span>34.9 h</span></div>
+                                        <div><label>thatbroc</label><span>31.5 h</span></div>
+                                        <div><label>algosc2</label><span>22.4 h</span></div>
+                                        <div><label>pyro1821</label><span>20.1 h</span></div>
+                                        <div><label>Evrykind_</label><span>18.0 h</span></div>
+                                        <div><label>spud__doctor</label><span>17.2 h</span></div>
+                                        <div><label>ShamBadger</label><span>15.4 h</span></div>
+                                        <div><label>AnAnonymousGifter</label><span>15.2 h</span></div>
+                                        <div><label>bugsplatter23</label><span>13.0 h</span></div>
+                                        <div><label>Adder82</label><span>11.9 h</span></div>
+                                        <div><label>electricbearcat</label><span>10.8 h</span></div>
+                                        <div><label>The_Original_Pod</label><span>10.7 h</span></div>
+                                        <div><label>SolronHV</label><span>10.3 h</span></div>
+                                        <div><label>CataStarcraft</label><span>9.4 h</span></div>
+                                        <div><label>maratus102</label><span>9.1 h</span></div>
+                                        <div><label>joepro99</label><span>8.8 h</span></div>
+                                        <div><label>maxxsann</label><span>7.9 h</span></div>
+                                        <div><label>feardragon64</label><span>7.7 h</span></div>
+                                        <div><label>MichaelTheArc42</label><span>6.9 h</span></div>
+                                        <div><label>ihal20</label><span>6.7 h</span></div>
+                                        <div><label>SqueakyBJsFTW</label><span>6.3 h</span></div>
+                                        <div><label>Fenrack</label><span>6.1 h</span></div>
+                                        <div><label>GargantuanGuava</label><span>5.3 h</span></div>
+                                        <div><label>raventhon</label><span>5.0 h</span></div>
+                                        <div><label>espertk</label><span>4.5 h</span></div>
+                                        <div><label>oigewan</label><span>4.5 h</span></div>
+                                        <div><label>PI0x_</label><span>4.5 h</span></div>
+                                        <div><label>cascade_fury</label><span>4.3 h</span></div>
+                                        <div><label>IlliterateNerd</label><span>4.2 h</span></div>
+                                        <div><label>aramsham</label><span>4.2 h</span></div>
+                                        <div><label>Somicron</label><span>3.9 h</span></div>
+                                        <div><label>vTriple</label><span>3.8 h</span></div>
+                                        <div><label>LordByrnsy</label><span>3.5 h</span></div>
+                                        <div><label>danmo__</label><span>3.0 h</span></div>
+                                        <div><label>Kilgoretrout512</label><span>2.6 h</span></div>
+                                        <div><label>TypeOne55</label><span>2.5 h</span></div>
+                                        <div><label>Arminius2436</label><span>2.4 h</span></div>
+                                        <div><label>Turora</label><span>2.4 h</span></div>
+                                        <div><label>pslteamcaptain</label><span>2.4 h</span></div>
+                                        <div><label>tekjess</label><span>2.3 h</span></div>
+                                        <div><label>JD1916</label><span>2.2 h</span></div>
+                                        <div><label>hungr4batl</label><span>2.2 h</span></div>
+                                        <div><label>kilokilo23</label><span>2.2 h</span></div>
+                                        <div><label>WillieNelsonsHeadband</label><span>2.2 h</span></div>
+                                        <div><label>knittinkittins</label><span>2.2 h</span></div>
+                                        <div><label>kingslorche</label><span>1.9 h</span></div>
+                                        <div><label>mRitt3r</label><span>1.8 h</span></div>
+                                        <hr>
+                                        <div class="subathon-leaderboard-remainder"><label>Others (1456)</label><span>252.9 h</span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="subathon-grid">
+                        <div class="subathon-leaderboard">
+                            <h4>Top Sub Gifters</h4>
+                            <div class="subathon-leaderboard-items">
+                                <div><label>Graywolf09</label><span>1082</span></div>
+                                <div><label>apollogod1990</label><span>906</span></div>
+                                <div><label>GulNazNihari</label><span>887</span></div>
+                                <div><label>thatbroc</label><span>717</span></div>
+                                <div><label>BloodFeast_Rambo</label><span>661</span></div>
+                                <div><label>pyro1821</label><span>482</span></div>
+                                <div><label>algosc2</label><span>416</span></div>
+                                <div><label>spud__doctor</label><span>408</span></div>
+                                <div><label>ShamBadger</label><span>368</span></div>
+                                <div><label>AnAnonymousGifter</label><span>366</span></div>
+                                <div><label>bugsplatter23</label><span>298</span></div>
+                                <div><label>Adder82</label><span>255</span></div>
+                                <div><label>electricbearcat</label><span>250</span></div>
+                                <div><label>The_Original_Pod</label><span>228</span></div>
+                                <div><label>SolronHV</label><span>225</span></div>
+                                <div><label>maratus102</label><span>219</span></div>
+                                <div><label>joepro99</label><span>200</span></div>
+                                <div><label>CataStarcraft</label><span>197</span></div>
+                                <div><label>maxxsann</label><span>177</span></div>
+                                <div><label>feardragon64</label><span>170</span></div>
+                                <hr>
+                                <div class="subathon-leaderboard-remainder"><label>Others (561)</label><span>6515</span></div>
+                            </div>
+                        </div>
+                        <div class="subathon-leaderboard">
+                            <h4>100 Sub Gifters</h4>
+                            <div class="subathon-leaderboard-items">
+                                <div><label>GulNazNihari</label><span>7 x 100</span></div>
+                                <div><label>Graywolf09</label><span>6 x 100</span></div>
+                                <div><label>ShamBadger</label><span>3 x 100</span></div>
+                                <div><label>algosc2</label><span>3 x 100</span></div>
+                                <div><label>AnAnonymousGifter</label><span>2 x 100</span></div>
+                                <div><label>joepro99</label><span>2 x 100</span></div>
+                                <div><label>The_Original_Pod</label><span>2 x 100</span></div>
+                                <div><label>SolronHV</label><span>2 x 100</span></div>
+                                <div><label>thatbroc</label><span>1 x 100</span></div>
+                                <div><label>feardragon64</label><span>1 x 100</span></div>
+                                <div><label>electricbearcat</label><span>1 x 100</span></div>
+                            </div>
+                        </div>
+                        <div class="subathon-leaderboard">
+                            <h4>Top Cheerers</h4>
+                            <div class="subathon-leaderboard-items">
+                                <div><label>BloodFeast_Rambo</label><span>83550</span></div>
+                                <div><label>apollogod1990</label><span>24560</span></div>
+                                <div><label>GulNazNihari</label><span>20000</span></div>
+                                <div><label>GargantuanGuava</label><span>17615</span></div>
+                                <div><label>AnAnonymousCheerer</label><span>16206</span></div>
+                                <div><label>Adder82</label><span>15000</span></div>
+                                <div><label>CataStarcraft</label><span>13701</span></div>
+                                <div><label>The_Original_Pod</label><span>12000</span></div>
+                                <div><label>Takkaryx</label><span>11500</span></div>
+                                <div><label>zzvbm</label><span>10000</span></div>
+                                <div><label>SolronHV</label><span>9000</span></div>
+                                <div><label>connconn</label><span>8567</span></div>
+                                <div><label>Fenrack</label><span>7391</span></div>
+                                <div><label>mRitt3r</label><span>6504</span></div>
+                                <div><label>joepro99</label><span>6000</span></div>
+                                <div><label>GwenBD94</label><span>6000</span></div>
+                                <div><label>feardragon64</label><span>5990</span></div>
+                                <div><label>maxxsann</label><span>5886</span></div>
+                                <div><label>bugsplatter23</label><span>5500</span></div>
+                                <div><label>Undeadhorrer</label><span>5300</span></div>
+                                <hr>
+                                <div class="subathon-leaderboard-remainder"><label>Others (184)</label><span>146926</span></div>
+                            </div>
+                        </div>
+                        <div class="subathon-leaderboard">
+                            <h4>Top Donors</h4>
+                            <div class="subathon-leaderboard-items">
+                                <div><label>Evrykind_</label><span>$ 1928.40</span></div>
+                                <div><label>algosc2</label><span>$ 600.00</span></div>
+                                <div><label>raventhon</label><span>$ 505.00</span></div>
+                                <div><label>Somicron</label><span>$ 170.69</span></div>
+                                <div><label>IlliterateNerd</label><span>$ 131.76</span></div>
+                                <div><label>thatbroc</label><span>$ 130.00</span></div>
+                                <div><label>Unknown</label><span>$ 118.00</span></div>
+                                <div><label>muaddib4</label><span>$ 110.00</span></div>
+                                <div><label>aldeon</label><span>$ 100.00</span></div>
+                                <div><label>kralhonza</label><span>$ 100.00</span></div>
+                                <div><label>Graywolf09</label><span>$ 80.00</span></div>
+                                <div><label>Copenhagendas</label><span>$ 75.00</span></div>
+                                <div><label>JD1916</label><span>$ 70.00</span></div>
+                                <div><label>Plox</label><span>$ 69.69</span></div>
+                                <div><label>tatsujin</label><span>$ 60.83</span></div>
+                                <div><label>BloodFeast_Rambo</label><span>$ 50.00</span></div>
+                                <div><label>Simonco11</label><span>$ 50.00</span></div>
+                                <div><label>ananthrax</label><span>$ 50.00</span></div>
+                                <div><label>MCsocko</label><span>$ 50.00</span></div>
+                                <div><label>xE1NSTE1Nx2049</label><span>$ 50.00</span></div>
+                                <hr>
+                                <div class="subathon-leaderboard-remainder"><label>Others (69)</label><span>$ 835.22</span></div>
+                            </div>
+                        </div>
+                        <div class="subathon-leaderboard">
+                            <h4>Top Non-Sub Snipers</h4>
+                            <div class="subathon-leaderboard-items">
+                                <div><label>thatbroc</label><span>157</span></div>
+                                <div><label>MichaelTheArc42</label><span>72</span></div>
+                                <div><label>maxxsann</label><span>66</span></div>
+                                <div><label>BloodFeast_Rambo</label><span>63</span></div>
+                                <div><label>bugsplatter23</label><span>62</span></div>
+                                <div><label>SqueakyBJsFTW</label><span>38</span></div>
+                                <div><label>apollogod1990</label><span>31</span></div>
+                                <div><label>Somicron</label><span>27</span></div>
+                                <div><label>IlliterateNerd</label><span>22</span></div>
+                                <div><label>AnAnonymousGifter</label><span>20</span></div>
+                                <div><label>mickeycxd</label><span>20</span></div>
+                                <div><label>spud__doctor</label><span>18</span></div>
+                                <div><label>Evrykind_</label><span>15</span></div>
+                                <div><label>addiliav</label><span>13</span></div>
+                                <div><label>MrStonedOne</label><span>11</span></div>
+                                <div><label>shawzaw</label><span>11</span></div>
+                                <div><label>danmo__</label><span>10</span></div>
+                                <div><label>hulksmash1814</label><span>9</span></div>
+                                <div><label>abm30000</label><span>9</span></div>
+                                <div><label>kilokilo23</label><span>8</span></div>
+                                <hr>
+                                <div class="subathon-leaderboard-remainder"><label>Others (9)</label><span>54</span></div>
+                            </div>
+                        </div>
+                        <div class="subathon-leaderboard">
+                            <h4>Top Chatters</h4>
+                            <div class="subathon-leaderboard-items">
+                                <div><label>Nightbot</label><span>23565</span></div>
+                                <div><label>eonblu</label><span>9267</span></div>
+                                <div><label>CarsonMauthe</label><span>6003</span></div>
+                                <div><label>spud__doctor</label><span>5564</span></div>
+                                <div><label>AsherBro</label><span>4893</span></div>
+                                <div><label>TripleHelixSC2</label><span>4699</span></div>
+                                <div><label>bugsplatter23</label><span>4321</span></div>
+                                <div><label>AcTiVillain</label><span>4321</span></div>
+                                <div><label>KindaAverageGamer13</label><span>3529</span></div>
+                                <div><label>maxxsann</label><span>3249</span></div>
+                                <div><label>cascade_fury</label><span>3125</span></div>
+                                <div><label>thatbroc</label><span>2463</span></div>
+                                <div><label>PointsBro</label><span>2384</span></div>
+                                <div><label>bulya256</label><span>2274</span></div>
+                                <div><label>x5_PiG</label><span>2248</span></div>
+                                <div><label>dotsc2</label><span>2129</span></div>
+                                <hr>
+                                <div class="subathon-leaderboard-remainder"><label>Others (9173)</label><span>261361</span></div>
+                            </div>
+                        </div>
+                        <div class="subathon-leaderboard">
+                            <h4>Top Bacon Spammers</h4>
+                            <div class="subathon-leaderboard-items">
+                                <div><label>bulya256</label><span>2541</span></div>
+                                <div><label>TwoSecondHero2</label><span>2536</span></div>
+                                <div><label>cascade_fury</label><span>2521</span></div>
+                                <div><label>BloodFeast_Rambo</label><span>2188</span></div>
+                                <div><label>DjentlemanSc2</label><span>2139</span></div>
+                                <div><label>AsherBro</label><span>2013</span></div>
+                                <div><label>maxxsann</label><span>2003</span></div>
+                                <div><label>bugsplatter23</label><span>1978</span></div>
+                                <div><label>IlliterateNerd</label><span>1911</span></div>
+                                <div><label>SnipesXIII</label><span>1816</span></div>
+                                <div><label>squareSpherePlays</label><span>1709</span></div>
+                                <div><label>proxybattlecruiser</label><span>1664</span></div>
+                                <div><label>alec________</label><span>1650</span></div>
+                                <div><label>Fenrack</label><span>1625</span></div>
+                                <div><label>spud__doctor</label><span>1561</span></div>
+                                <div><label>CarsonMauthe</label><span>1372</span></div>
+                                <hr>
+                                <div class="subathon-leaderboard-remainder"><label>Others (1295)</label><span>82091</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subathon-multicolumn">
+                        <div class="subathon-leaderboard">
+                            <h4>Raids</h4>
+                            <div class="subathon-leaderboard-items">
+                                <div><label>PaymoneyWubby</label><span>5743</span></div>
+                                <div><label>ESL_SC2b</label><span>2906</span></div>
+                                <div><label>Artosis</label><span>2 x ~1321</span></div>
+                                <div><label>ZombieGrub</label><span>3 x ~557</span></div>
+                                <div><label>Livibee</label><span>8 x ~159</span></div>
+                                <div><label>Maynarde</label><span>11 x ~94</span></div>
+                                <div><label>upatreezelda</label><span>841</span></div>
+                                <div><label>Neuro</label><span>3 x ~264</span></div>
+                                <div><label>FlorencioSC</label><span>14 x ~52</span></div>
+                                <div><label>ViBElol</label><span>4 x ~178</span></div>
+                                <div><label>JimDavisMTG</label><span>2 x ~333</span></div>
+                                <div><label>Infurneaux</label><span>485</span></div>
+                                <div><label>LowkoTV</label><span>478</span></div>
+                                <div><label>Harstem</label><span>337</span></div>
+                                <div><label>Apoptosis808</label><span>4 x ~63</span></div>
+                                <div><label>JimRsNg</label><span>223</span></div>
+                                <div><label>3DCLANru</label><span>3 x ~69</span></div>
+                                <div><label>Beastyqt</label><span>206</span></div>
+                                <div><label>blyonfire</label><span>143</span></div>
+                                <div><label>CranKy_Ducklings</label><span>125</span></div>
+                                <div><label>jdubya181</label><span>3 x ~42</span></div>
+                                <div><label>Grimmy_UK</label><span>4 x ~24</span></div>
+                                <div><label>marmellohh</label><span>90</span></div>
+                                <div><label>ninasc2</label><span>86</span></div>
+                                <div><label>probe_sc2</label><span>79</span></div>
+                                <div><label>SomeDrunkCanadian</label><span>74</span></div>
+                                <div><label>coconutgamezz</label><span>72</span></div>
+                                <div><label>xCrazyCritterx</label><span>3 x ~20</span></div>
+                                <div><label>rhyason6</label><span>3 x ~16</span></div>
+                                <div><label>booooooooooooooooooOm</label><span>44</span></div>
+                                <div><label>Louvrissa</label><span>39</span></div>
+                                <div><label>GuidebookGaming</label><span>34</span></div>
+                                <div><label>hupsaiya</label><span>26</span></div>
+                                <div><label>Eurystheussc2</label><span>23</span></div>
+                                <div><label>HoneyRyeRye</label><span>22</span></div>
+                                <div><label>TRICIAxPAIN</label><span>20</span></div>
+                                <div><label>FalconPaladin</label><span>2 x ~10</span></div>
+                                <div><label>captcanuck35</label><span>12</span></div>
+                                <div><label>danniiie</label><span>11</span></div>
+                                <div><label>steazyd</label><span>10</span></div>
+                                <div><label>capt_hapa</label><span>9</span></div>
+                                <div><label>Steelmold</label><span>9</span></div>
+                                <div><label>alon_levy</label><span>9</span></div>
+                                <div><label>dougsluggins</label><span>8</span></div>
+                                <div><label>Simmmmen</label><span>8</span></div>
+                                <div><label>renegadexstudios</label><span>7</span></div>
+                                <div><label>bauxxistreams</label><span>7</span></div>
+                                <div><label>MiNiRodZ</label><span>6</span></div>
+                                <div><label>vivid_sc</label><span>6</span></div>
+                                <div><label>for_the_huynh</label><span>6</span></div>
+                                <div><label>ArkeMeister</label><span>3</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subathon-subgoal-list">
+                        <h4>Subgoals <span class="subathon-note">(also see the <a href="https://www.youtube.com/playlist?list=PLFUDU8AOevUebNZHOD-Tx9Yg4r57pfsZD" target="_blank">YouTube Playlist</a>)</span></h4>
+                        <table>
+                            <tr>
+                                <td>20</td>
+                                <td>Bacon PiG</td>
+                                <td>reached by <span>RoguerSC</span></td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>Florencio Strats</td>
+                                <td>reached by <span>BloodFeast_Rambo</span></td>
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td>Apartment Tour</td>
+                                <td>reached by <span>Arminius2436</span></td>
+                            </tr>
+                            <tr>
+                                <td>80</td>
+                                <td>Make Pizza on Stream</td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td><a href="https://www.youtube.com/watch?v=QYKN3IW-_Rg" target="_blank">Live Rank Roulette</a></td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>120</td>
+                                <td>25 Bacon Push Ups</td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>140</td>
+                                <td>Eat Spoonful of Vegemite</td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>160</td>
+                                <td>Blindfold Challenge</td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>180</td>
+                                <td>Eunuch PiG</td>
+                                <td>reached by <span>coldhotococoa</span></td>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td>PiG Merch Giveaway (Shirt+Joggers)</td>
+                                <td>reached by <span>Fenrack</span></td>
+                            </tr>
+                            <tr>
+                                <td>220</td>
+                                <td>Read Starcraft Fanfiction</td>
+                                <td>reached by <span>PI0x_</span></td>
+                            </tr>
+                            <tr>
+                                <td>240</td>
+                                <td>Do Full Workout</td>
+                                <td>reached by <span>capt_hapa</span></td>
+                            </tr>
+                            <tr>
+                                <td>260</td>
+                                <td>Eat Chilli Sauce</td>
+                                <td>reached by <span>undefined_bhvr</span></td>
+                            </tr>
+                            <tr>
+                                <td>280</td>
+                                <td>Spirits/Beer Tasting</td>
+                                <td>reached by <span>halprin</span></td>
+                            </tr>
+                            <tr>
+                                <td>300</td>
+                                <td>Make a New Crazy Sandwich</td>
+                                <td>reached by <span>maxxsann</span></td>
+                            </tr>
+                            <tr>
+                                <td>320</td>
+                                <td><a href="https://www.youtube.com/watch?v=dPqTjoMcniw" target="_blank">Teach Dot How to Protoss</a></td>
+                                <td>reached by <span>hungr4batl</span></td>
+                            </tr>
+                            <tr class="subathon-subgoal-extra">
+                                <td></td>
+                                <td><a href="https://www.youtube.com/watch?v=V76u4krkp8M" target="_blank">Dot Toss Bronze to GM #2</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>340</td>
+                                <td>Order New Costume From EBay</td>
+                                <td>reached by <span>misdre</span></td>
+                            </tr>
+                            <tr>
+                                <td>360</td>
+                                <td>Eat Durian</td>
+                                <td>reached by <span>hobowizz</span></td>
+                            </tr>
+                            <tr>
+                                <td>380</td>
+                                <td>Chat Chooses New Emote</td>
+                                <td>reached by <span>BloodFeast_Rambo</span></td>
+                            </tr>
+                            <tr>
+                                <td>400</td>
+                                <td>Eat X2 Spicy Ramen (and Cry)</td>
+                                <td>reached by <span>impirion</span></td>
+                            </tr>
+                            <tr>
+                                <td>420</td>
+                                <td>Table Tennis Match vs Dot</td>
+                                <td>reached by <span>creativeburr</span></td>
+                            </tr>
+                            <tr>
+                                <td>440</td>
+                                <td>Eat 6 Spoons Peanut Butter</td>
+                                <td>reached by <span>onearmdwonder</span></td>
+                            </tr>
+                            <tr>
+                                <td>460</td>
+                                <td><a href="https://www.youtube.com/watch?v=csHy_VrpMXk" target="_blank">Play a Game Chosen By Chat</a></td>
+                                <td>reached by <span>withoutclass</span></td>
+                            </tr>
+                            <tr>
+                                <td>480</td>
+                                <td>Eat Half a Lemon</td>
+                                <td>reached by <span>GrimmjowEX</span></td>
+                            </tr>
+                            <tr>
+                                <td>500</td>
+                                <td>PiG Will Do a Bronze to GM</td>
+                                <td>reached by <span>HedgyV</span></td>
+                            </tr>
+                            <tr>
+                                <td>600</td>
+                                <td>Ladder Monobattles</td>
+                                <td>reached by <span>Fenrack</span></td>
+                            </tr>
+                            <tr>
+                                <td>620</td>
+                                <td>Thumb War vs Dot</td>
+                                <td>reached by <span>TheHavior</span></td>
+                            </tr>
+                            <tr>
+                                <td>640</td>
+                                <td>Play with Mouse in Left Hand</td>
+                                <td>reached by <span>Fenrack</span></td>
+                            </tr>
+                            <tr>
+                                <td>660</td>
+                                <td><a href="https://www.youtube.com/watch?v=AIZ_Qc0cdLA" target="_blank">PiG vs Subs (Archon, etc)</a></td>
+                                <td>reached by <span>spud__doctor</span></td>
+                            </tr>
+                            <tr>
+                                <td>680</td>
+                                <td>Commentate a Random non-SC Video</td>
+                                <td>reached by <span>kalinstar</span></td>
+                            </tr>
+                            <tr>
+                                <td>700</td>
+                                <td><a href="https://www.youtube.com/watch?v=eT0LHtE0z2Y" target="_blank">PiG Roasts Replays</a></td>
+                                <td>reached by <span>summilux</span></td>
+                            </tr>
+                            <tr>
+                                <td>720</td>
+                                <td>Co-op on Brutal with Viewers</td>
+                                <td>reached by <span>Glazerbeam</span></td>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td>Shower on Stream (with Boardies)</td>
+                                <td>reached by <span>methadreamt</span></td>
+                            </tr>
+                            <tr>
+                                <td>2000</td>
+                                <td>Create Onlyfans Account</td>
+                                <td>reached by <span>ShamBadger</span></td>
+                            </tr>
+                            <tr>
+                                <td>2200</td>
+                                <td>Commentate a Random non-SC Video #2</td>
+                                <td>reached by <span>pinion_</span></td>
+                            </tr>
+                            <tr>
+                                <td>2300</td>
+                                <td><a href="https://www.youtube.com/watch?v=DHyx28AU3sE" target="_blank">PiG Roasts #2</a></td>
+                                <td>reached by <span>lukenukemstreaming</span></td>
+                            </tr>
+                            <tr>
+                                <td>2400</td>
+                                <td>PiG Shows Himself Exercising Outside</td>
+                                <td>reached by <span>apollogod1990</span></td>
+                            </tr>
+                            <tr>
+                                <td>2500</td>
+                                <td>Commentate Viewer Archon Matches</td>
+                                <td>reached by <span>apollogod1990</span></td>
+                            </tr>
+                            <tr>
+                                <td>2600</td>
+                                <td>Dot Cracks Egg on PiG's Head</td>
+                                <td>reached by <span>ian_m7</span></td>
+                            </tr>
+                            <tr>
+                                <td>2700</td>
+                                <td><a href="https://www.youtube.com/watch?v=BB93CqvEUD4" target="_blank">Real Twitch Plays PiG</a></td>
+                                <td>reached by <span>bugsplatter23</span></td>
+                            </tr>
+                            <tr>
+                                <td>2800</td>
+                                <td>GSL Supper Tournament Watch Party</td>
+                                <td>reached by <span>zaomee</span></td>
+                            </tr>
+                            <tr>
+                                <td>2900</td>
+                                <td>Play Overcooked 2 with Dot</td>
+                                <td>reached by <span>Oldmanguardian</span></td>
+                            </tr>
+                            <tr>
+                                <td>3000</td>
+                                <td><a href="https://www.youtube.com/watch?v=m3lU23dQGYU" target="_blank">Play Starcraft Remastered</a></td>
+                                <td>reached by <span>SqueakyBJsFTW</span></td>
+                            </tr>
+                            <tr>
+                                <td>3100</td>
+                                <td>PiG Gives Tour of Local Area</td>
+                                <td>reached by <span>ShamBadger</span></td>
+                            </tr>
+                            <tr>
+                                <td>3200</td>
+                                <td>Play Scary/Horror Game</td>
+                                <td>reached by <span>Turora</span></td>
+                            </tr>
+                            <tr>
+                                <td>3400</td>
+                                <td><a href="https://www.youtube.com/watch?v=zSjHXdH8S2g" target="_blank">Cast Viewer Beast of the Hill #2</a></td>
+                                <td>reached by <span>cincopation</span></td>
+                            </tr>
+                            <tr>
+                                <td>3550</td>
+                                <td><a href="https://www.youtube.com/watch?v=L9lHOmkhGcI" target="_blank">PiG Can't Swear For 1Hr (Penalty = +150s/word)</a></td>
+                                <td>reached by <span>TypeOne55</span></td>
+                            </tr>
+                            <tr>
+                                <td>3700</td>
+                                <td>PiG Eats in Restaurant Ouside</td>
+                                <td>reached by <span>Lioncat55</span></td>
+                            </tr>
+                            <tr>
+                                <td>3850</td>
+                                <td>Play Archon Mode with Dot</td>
+                                <td>reached by <span>LordByrnsy</span></td>
+                            </tr>
+                            <tr>
+                                <td>4000</td>
+                                <td>Sell PiG's Shower Water (Aus Only)</td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>4150</td>
+                                <td><a href="https://www.youtube.com/watch?v=kW1tm56V5L0" target="_blank">PiG Roasts #3</a></td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>4300</td>
+                                <td>Make Lasagna on Stream</td>
+                                <td>reached by <span>The_Original_Pod</span></td>
+                            </tr>
+                            <tr>
+                                <td>4450</td>
+                                <td><a href="https://www.youtube.com/watch?v=cMnXFYg8__A" target="_blank">Dot Shaves PiG's Back + Shoulders</a></td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>4600</td>
+                                <td>PiG vs As Many Players As Possible in SC</td>
+                                <td>reached by <span>OverThoughtGaming</span></td>
+                            </tr>
+                            <tr>
+                                <td>4750</td>
+                                <td>Blindfolder Taste Test</td>
+                                <td>reached by <span>backspace_101</span></td>
+                            </tr>
+                            <tr>
+                                <td>4900</td>
+                                <td>Play Chess vs Viewers</td>
+                                <td>reached by <span>aramsham</span></td>
+                            </tr>
+                            <tr>
+                                <td>5000</td>
+                                <td>Dye Hair, Colour Chosen by Chat</td>
+                                <td>reached by <span>apollogod1990</span></td>
+                            </tr>
+                            <tr>
+                                <td>5200</td>
+                                <td><a href="https://www.youtube.com/watch?v=poLWTQ3bXr8" target="_blank">Play Starcraft Charades</a></td>
+                                <td>reached by <span>apollogod1990</span></td>
+                            </tr>
+                            <tr>
+                                <td>5400</td>
+                                <td>PiG Gives Tour of Sydney Harbour</td>
+                                <td>reached by <span>CataStarcraft</span></td>
+                            </tr>
+                            <tr>
+                                <td>5600</td>
+                                <td><a href="https://www.youtube.com/watch?v=QinFMsuAxAQ" target="_blank">Cast Viewer Tournament</a></td>
+                                <td>reached by <span>bugsplatter23</span></td>
+                            </tr>
+                            <tr>
+                                <td>5800</td>
+                                <td>PiG Gives Tour of Bondi Beach</td>
+                                <td>reached by <span>apollogod1990</span></td>
+                            </tr>
+                            <tr>
+                                <td>6000</td>
+                                <td>Shave Head</td>
+                                <td>reached by <span>B3anm3ist3r</span></td>
+                            </tr>
+                            <tr>
+                                <td>6001</td>
+                                <td>Dot Cries</td>
+                                <td>reached by <span>B3anm3ist3r</span></td>
+                            </tr>
+                            <tr>
+                                <td>6165</td>
+                                <td><a href="https://www.youtube.com/watch?v=QAzjc-mF3io" target="_blank">Cast Super Hour of Florencio Files</a></td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>6330</td>
+                                <td>Dusty Clean Up Camera</td>
+                                <td>reached by <span>CataStarcraft</span></td>
+                            </tr>
+                            <tr>
+                                <td>6500</td>
+                                <td>Real Twitch Plays SC:R with Carbot Skin</td>
+                                <td>reached by <span>apollogod1990</span></td>
+                            </tr>
+                            <tr>
+                                <td>6666</td>
+                                <td><a href="https://www.youtube.com/watch?v=cjZq5AyDmyE" target="_blank">Visit Shops Wearing Roach Costume</a></td>
+                                <td>reached by <span>Kalthonia</span></td>
+                            </tr>
+                            <tr>
+                                <td>6800</td>
+                                <td>Play Recent Game, Chosen by Viewers</td>
+                                <td>reached by <span>thatbroc</span></td>
+                            </tr>
+                            <tr>
+                                <td>6969</td>
+                                <td>Publish Onlypig's Second Post</td>
+                                <td>reached by <span>bugsplatter23</span></td>
+                            </tr>
+                            <tr>
+                                <td>7000</td>
+                                <td>60 min of Silent Meditating on Stream</td>
+                                <td>reached by <span>ShamBadger</span></td>
+                            </tr>
+                            <tr>
+                                <td>7165</td>
+                                <td><a href="https://www.youtube.com/watch?v=xGKZNFowQ3o" target="_blank">PiG Roasts #4</a></td>
+                                <td>reached by <span>cascade_fury</span></td>
+                            </tr>
+                            <tr>
+                                <td>7330</td>
+                                <td>Go Bouldering on Stream</td>
+                                <td>reached by <span>algosc2</span></td>
+                            </tr>
+                            <tr>
+                                <td>7495</td>
+                                <td>Cook 3 Different Types of Pork</td>
+                                <td>reached by <span>maxxsann</span></td>
+                            </tr>
+                            <tr>
+                                <td>7660</td>
+                                <td>Cast Viewer Beast of the Hill #3</td>
+                                <td>reached by <span>salvetheron</span></td>
+                            </tr>
+                            <tr>
+                                <td>7825</td>
+                                <td>Play Doom Eternal - Ultra Nightmare</td>
+                                <td>reached by <span>joepro99</span></td>
+                            </tr>
+                            <tr>
+                                <td>8000</td>
+                                <td>Make Romantic Dinner For Dot</td>
+                                <td>reached by <span>Raist___</span></td>
+                            </tr>
+                            <tr>
+                                <td>8165</td>
+                                <td><a href="https://www.youtube.com/watch?v=So3624dtwcc" target="_blank">Cast Starcraft while Eating Hot Wings</a></td>
+                                <td>reached by <span>spud__doctor</span></td>
+                            </tr>
+                            <tr>
+                                <td>8330</td>
+                                <td>Table Tennis Rematch Bo69 vs Dot</td>
+                                <td>reached by <span>saundo85</span></td>
+                            </tr>
+                            <tr>
+                                <td>8495</td>
+                                <td>Buy Aang Costume to Cosplay when Bald</td>
+                                <td>reached by <span>ihal20</span></td>
+                            </tr>
+                            <tr>
+                                <td>8660</td>
+                                <td>Play MTG Arena</td>
+                                <td>reached by <span>ihal20</span></td>
+                            </tr>
+                            <tr>
+                                <td>8825</td>
+                                <td><a href="https://www.youtube.com/watch?v=sZ44FGiutvo" target="_blank">Cast Smooth Brain Players</a></td>
+                                <td>reached by <span>ihal20</span></td>
+                            </tr>
+                            <tr>
+                                <td>9000</td>
+                                <td>1 Hour Jogging Stream</td>
+                                <td>reached by <span>Fly_With_Nick</span></td>
+                            </tr>
+                            <tr>
+                                <td>10000</td>
+                                <td><a href="https://www.youtube.com/watch?v=WpctoO8_iH4" target="_blank">Hot Tub Stream</a></td>
+                                <td>reached by <span>spud__doctor</span></td>
+                            </tr>
+                            <tr>
+                                <td>10300</td>
+                                <td><a href="https://www.youtube.com/watch?v=wVxlJ9r5B6A" target="_blank">Do a Thongy (Like a Shooey)</a></td>
+                                <td>reached by <span>Tycolosis</span></td>
+                            </tr>
+                            <tr>
+                                <td>10600</td>
+                                <td>Play Among Us with Viewers</td>
+                                <td>reached by <span>thatbroc</span></td>
+                            </tr>
+                            <tr>
+                                <td>11000</td>
+                                <td><a href="https://www.youtube.com/watch?v=plwH4Q7m89M" target="_blank">Take Dot Out, with Babysitter for Stream</a></td>
+                                <td>reached by <span>SomeDrunkCanadian</span></td>
+                            </tr>
+                            <tr>
+                                <td>11300</td>
+                                <td>Online Board Games with Viewers</td>
+                                <td>reached by <span>BloodFeast_Rambo</span></td>
+                            </tr>
+                            <tr>
+                                <td>11500</td>
+                                <td><a href="https://www.youtube.com/watch?v=oG8q_he8fD0" target="_blank">Judge Smooth Brain Auditions</a></td>
+                                <td>reached by <span>MichaelTheArc42</span></td>
+                            </tr>
+                            <tr>
+                                <td>11750</td>
+                                <td><a href="https://www.youtube.com/watch?v=VKMcRlZpBhY" target="_blank">Play 2v2 On Two Accounts At Once</a></td>
+                                <td>reached by <span>MaruAmoriani</span></td>
+                            </tr>
+                            <tr>
+                                <td>12000</td>
+                                <td>Newbie Stream</td>
+                                <td>reached by <span>cascade_fury</span></td>
+                            </tr>
+                            <tr>
+                                <td>12250</td>
+                                <td>Chat Teaches Dot About Coding</td>
+                                <td>reached by <span>graywolf09</span></td>
+                            </tr>
+                            <tr>
+                                <td>12500</td>
+                                <td>Twitch Starcraft Pub Crawl</td>
+                                <td>reached by <span>graywolf09</span></td>
+                            </tr>
+                            <tr>
+                                <td>12750</td>
+                                <td>Sell Pink Hair After PiG Shaves Head</td>
+                                <td>reached by <span>feardragon64</span></td>
+                            </tr>
+                            <tr>
+                                <td>13000</td>
+                                <td><a href="https://www.youtube.com/watch?v=DfI8ytoteNM" target="_blank">Hot Wings No Swearing Flo Files Challenge</a></td>
+                                <td>reached by <span>graywolf09</span></td>
+                            </tr>
+                            <tr>
+                                <td>13250</td>
+                                <td><a href="https://www.youtube.com/watch?v=PjznwiOJycY" target="_blank">Dot's Toss Bronze to GM #3</a></td>
+                                <td>reached by <span>apollogod1990</span></td>
+                            </tr>
+                            <tr>
+                                <td>13500</td>
+                                <td>Cast a Different eSport, Chosen by Chat</td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>13750</td>
+                                <td><a href="https://www.youtube.com/watch?v=fqPkI3fZQB4" target="_blank">Hold Out Challenge vs Viewers</a></td>
+                                <td>reached by <span>MichaelTheArc42</span></td>
+                            </tr>
+                            <tr>
+                                <td>14000</td>
+                                <td>Movie Watch Party, Chosen by Chat</td>
+                                <td>reached by <span>MichaelTheArc42</span></td>
+                            </tr>
+                            <tr>
+                                <td>14250</td>
+                                <td>Play Chess vs Viewer #2</td>
+                                <td>reached by <span>espertk</span></td>
+                            </tr>
+                            <tr>
+                                <td>14500</td>
+                                <td><a href="https://www.youtube.com/watch?v=JAtNwA38aWc" target="_blank">Smurf Detective Live Stream</a></td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>14750</td>
+                                <td>Write a Subathon Song with Dot</td>
+                                <td>reached by <span>evrykind_</span></td>
+                            </tr>
+                            <tr>
+                                <td>15000</td>
+                                <td><a href="https://www.youtube.com/watch?v=h5HpY4MmMS4" target="_blank">Make Other Subathoners Suffer</a></td>
+                                <td>reached by <span>GulNazNihari</span></td>
+                            </tr>
+                            <tr>
+                                <td>15250</td>
+                                <td>Play Co-op #2</td>
+                                <td>reached by <span>graywolf09</span></td>
+                            </tr>
+                            <tr>
+                                <td>15500</td>
+                                <td>Publish Onlyfans Content #3</td>
+                                <td>reached by <span>TemujinGenghis</span></td>
+                            </tr>
+                            <tr>
+                                <td>15750</td>
+                                <td>PiG vs Viewers on Funny Maps</td>
+                                <td>reached by <span>thatbroc</span></td>
+                            </tr>
+                            <tr>
+                                <td>16000</td>
+                                <td>Table Tennis vs Dot - First To 69</td>
+                                <td>reached by <span>maratus102</span></td>
+                            </tr>
+                            <tr>
+                                <td>16250</td>
+                                <td>Play Among Us with Viewers #2</td>
+                                <td>reached by <span>voxyoid</span></td>
+                            </tr>
+                            <tr>
+                                <td>16500</td>
+                                <td>PiG Roasts #5</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>16750</td>
+                                <td>Dot Gives Victory/Farewell Concert</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>17000</td>
+                                <td>PiG Pro Tournament with $2000 Prize Pool</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="subathon-note">Editorial remark: Holy shit, this is a long list. What a legends.</div>
+                    </div><script>(0,window.jQuery)(".subathon-subgoal-list a").click(t=>{if(console.log(t.button),0==t.button)if(!t.ctrlKey){const e="https://www.youtube.com/embed/"+t.target.href.match(/v=(.*)/)[1];lity(e),t.preventDefault()}})</script>
                 </div>
-                <div class="subathon-grid">
-                    <div class="subathon-leaderboard">
-                        <h4>Top Sub Gifters</h4>
-                        <div class="subathon-leaderboard-items">
-                            <div><label>Graywolf09</label><span>1082</span></div>
-                            <div><label>apollogod1990</label><span>906</span></div>
-                            <div><label>GulNazNihari</label><span>887</span></div>
-                            <div><label>thatbroc</label><span>717</span></div>
-                            <div><label>BloodFeast_Rambo</label><span>661</span></div>
-                            <div><label>pyro1821</label><span>482</span></div>
-                            <div><label>algosc2</label><span>416</span></div>
-                            <div><label>spud__doctor</label><span>408</span></div>
-                            <div><label>ShamBadger</label><span>368</span></div>
-                            <div><label>AnAnonymousGifter</label><span>366</span></div>
-                            <div><label>bugsplatter23</label><span>298</span></div>
-                            <div><label>Adder82</label><span>255</span></div>
-                            <div><label>electricbearcat</label><span>250</span></div>
-                            <div><label>The_Original_Pod</label><span>228</span></div>
-                            <div><label>SolronHV</label><span>225</span></div>
-                            <div><label>maratus102</label><span>219</span></div>
-                            <div><label>joepro99</label><span>200</span></div>
-                            <div><label>CataStarcraft</label><span>197</span></div>
-                            <div><label>maxxsann</label><span>177</span></div>
-                            <div><label>feardragon64</label><span>170</span></div>
-                            <hr>
-                            <div class="subathon-leaderboard-remainder"><label>Others (561)</label><span>6515</span></div>
-                        </div>
-                    </div>
-                    <div class="subathon-leaderboard">
-                        <h4>100 Sub Gifters</h4>
-                        <div class="subathon-leaderboard-items">
-                            <div><label>GulNazNihari</label><span>7 x 100</span></div>
-                            <div><label>Graywolf09</label><span>6 x 100</span></div>
-                            <div><label>ShamBadger</label><span>3 x 100</span></div>
-                            <div><label>algosc2</label><span>3 x 100</span></div>
-                            <div><label>AnAnonymousGifter</label><span>2 x 100</span></div>
-                            <div><label>joepro99</label><span>2 x 100</span></div>
-                            <div><label>The_Original_Pod</label><span>2 x 100</span></div>
-                            <div><label>SolronHV</label><span>2 x 100</span></div>
-                            <div><label>thatbroc</label><span>1 x 100</span></div>
-                            <div><label>feardragon64</label><span>1 x 100</span></div>
-                            <div><label>electricbearcat</label><span>1 x 100</span></div>
-                        </div>
-                    </div>
-                    <div class="subathon-leaderboard">
-                        <h4>Top Cheerers</h4>
-                        <div class="subathon-leaderboard-items">
-                            <div><label>BloodFeast_Rambo</label><span>83550</span></div>
-                            <div><label>apollogod1990</label><span>24560</span></div>
-                            <div><label>GulNazNihari</label><span>20000</span></div>
-                            <div><label>GargantuanGuava</label><span>17615</span></div>
-                            <div><label>AnAnonymousCheerer</label><span>16206</span></div>
-                            <div><label>Adder82</label><span>15000</span></div>
-                            <div><label>CataStarcraft</label><span>13701</span></div>
-                            <div><label>The_Original_Pod</label><span>12000</span></div>
-                            <div><label>Takkaryx</label><span>11500</span></div>
-                            <div><label>zzvbm</label><span>10000</span></div>
-                            <div><label>SolronHV</label><span>9000</span></div>
-                            <div><label>connconn</label><span>8567</span></div>
-                            <div><label>Fenrack</label><span>7391</span></div>
-                            <div><label>mRitt3r</label><span>6504</span></div>
-                            <div><label>joepro99</label><span>6000</span></div>
-                            <div><label>GwenBD94</label><span>6000</span></div>
-                            <div><label>feardragon64</label><span>5990</span></div>
-                            <div><label>maxxsann</label><span>5886</span></div>
-                            <div><label>bugsplatter23</label><span>5500</span></div>
-                            <div><label>Undeadhorrer</label><span>5300</span></div>
-                            <hr>
-                            <div class="subathon-leaderboard-remainder"><label>Others (184)</label><span>146926</span></div>
-                        </div>
-                    </div>
-                    <div class="subathon-leaderboard">
-                        <h4>Top Donors</h4>
-                        <div class="subathon-leaderboard-items">
-                            <div><label>Evrykind_</label><span>$ 1928.40</span></div>
-                            <div><label>algosc2</label><span>$ 600.00</span></div>
-                            <div><label>raventhon</label><span>$ 505.00</span></div>
-                            <div><label>Somicron</label><span>$ 170.69</span></div>
-                            <div><label>IlliterateNerd</label><span>$ 131.76</span></div>
-                            <div><label>thatbroc</label><span>$ 130.00</span></div>
-                            <div><label>Unknown</label><span>$ 118.00</span></div>
-                            <div><label>muaddib4</label><span>$ 110.00</span></div>
-                            <div><label>aldeon</label><span>$ 100.00</span></div>
-                            <div><label>kralhonza</label><span>$ 100.00</span></div>
-                            <div><label>Graywolf09</label><span>$ 80.00</span></div>
-                            <div><label>Copenhagendas</label><span>$ 75.00</span></div>
-                            <div><label>JD1916</label><span>$ 70.00</span></div>
-                            <div><label>Plox</label><span>$ 69.69</span></div>
-                            <div><label>tatsujin</label><span>$ 60.83</span></div>
-                            <div><label>BloodFeast_Rambo</label><span>$ 50.00</span></div>
-                            <div><label>Simonco11</label><span>$ 50.00</span></div>
-                            <div><label>ananthrax</label><span>$ 50.00</span></div>
-                            <div><label>MCsocko</label><span>$ 50.00</span></div>
-                            <div><label>xE1NSTE1Nx2049</label><span>$ 50.00</span></div>
-                            <hr>
-                            <div class="subathon-leaderboard-remainder"><label>Others (69)</label><span>$ 835.22</span></div>
-                        </div>
-                    </div>
-                    <div class="subathon-leaderboard">
-                        <h4>Top Non-Sub Snipers</h4>
-                        <div class="subathon-leaderboard-items">
-                            <div><label>thatbroc</label><span>157</span></div>
-                            <div><label>MichaelTheArc42</label><span>72</span></div>
-                            <div><label>maxxsann</label><span>66</span></div>
-                            <div><label>BloodFeast_Rambo</label><span>63</span></div>
-                            <div><label>bugsplatter23</label><span>62</span></div>
-                            <div><label>SqueakyBJsFTW</label><span>38</span></div>
-                            <div><label>apollogod1990</label><span>31</span></div>
-                            <div><label>Somicron</label><span>27</span></div>
-                            <div><label>IlliterateNerd</label><span>22</span></div>
-                            <div><label>AnAnonymousGifter</label><span>20</span></div>
-                            <div><label>mickeycxd</label><span>20</span></div>
-                            <div><label>spud__doctor</label><span>18</span></div>
-                            <div><label>Evrykind_</label><span>15</span></div>
-                            <div><label>addiliav</label><span>13</span></div>
-                            <div><label>MrStonedOne</label><span>11</span></div>
-                            <div><label>shawzaw</label><span>11</span></div>
-                            <div><label>danmo__</label><span>10</span></div>
-                            <div><label>hulksmash1814</label><span>9</span></div>
-                            <div><label>abm30000</label><span>9</span></div>
-                            <div><label>kilokilo23</label><span>8</span></div>
-                            <hr>
-                            <div class="subathon-leaderboard-remainder"><label>Others (9)</label><span>54</span></div>
-                        </div>
-                    </div>
-                    <div class="subathon-leaderboard">
-                        <h4>Top Chatters</h4>
-                        <div class="subathon-leaderboard-items">
-                            <div><label>Nightbot</label><span>23565</span></div>
-                            <div><label>eonblu</label><span>9267</span></div>
-                            <div><label>CarsonMauthe</label><span>6003</span></div>
-                            <div><label>spud__doctor</label><span>5564</span></div>
-                            <div><label>AsherBro</label><span>4893</span></div>
-                            <div><label>TripleHelixSC2</label><span>4699</span></div>
-                            <div><label>bugsplatter23</label><span>4321</span></div>
-                            <div><label>AcTiVillain</label><span>4321</span></div>
-                            <div><label>KindaAverageGamer13</label><span>3529</span></div>
-                            <div><label>maxxsann</label><span>3249</span></div>
-                            <div><label>cascade_fury</label><span>3125</span></div>
-                            <div><label>thatbroc</label><span>2463</span></div>
-                            <div><label>PointsBro</label><span>2384</span></div>
-                            <div><label>bulya256</label><span>2274</span></div>
-                            <div><label>x5_PiG</label><span>2248</span></div>
-                            <div><label>dotsc2</label><span>2129</span></div>
-                            <hr>
-                            <div class="subathon-leaderboard-remainder"><label>Others (9173)</label><span>261361</span></div>
-                        </div>
-                    </div>
-                    <div class="subathon-leaderboard">
-                        <h4>Top Bacon Spammers</h4>
-                        <div class="subathon-leaderboard-items">
-                            <div><label>bulya256</label><span>2541</span></div>
-                            <div><label>TwoSecondHero2</label><span>2536</span></div>
-                            <div><label>cascade_fury</label><span>2521</span></div>
-                            <div><label>BloodFeast_Rambo</label><span>2188</span></div>
-                            <div><label>DjentlemanSc2</label><span>2139</span></div>
-                            <div><label>AsherBro</label><span>2013</span></div>
-                            <div><label>maxxsann</label><span>2003</span></div>
-                            <div><label>bugsplatter23</label><span>1978</span></div>
-                            <div><label>IlliterateNerd</label><span>1911</span></div>
-                            <div><label>SnipesXIII</label><span>1816</span></div>
-                            <div><label>squareSpherePlays</label><span>1709</span></div>
-                            <div><label>proxybattlecruiser</label><span>1664</span></div>
-                            <div><label>alec________</label><span>1650</span></div>
-                            <div><label>Fenrack</label><span>1625</span></div>
-                            <div><label>spud__doctor</label><span>1561</span></div>
-                            <div><label>CarsonMauthe</label><span>1372</span></div>
-                            <hr>
-                            <div class="subathon-leaderboard-remainder"><label>Others (1295)</label><span>82091</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="subathon-multicolumn">
-                    <div class="subathon-leaderboard">
-                        <h4>Raids</h4>
-                        <div class="subathon-leaderboard-items">
-                            <div><label>PaymoneyWubby</label><span>5743</span></div>
-                            <div><label>ESL_SC2b</label><span>2906</span></div>
-                            <div><label>Artosis</label><span>2 x ~1321</span></div>
-                            <div><label>ZombieGrub</label><span>3 x ~557</span></div>
-                            <div><label>Livibee</label><span>8 x ~159</span></div>
-                            <div><label>Maynarde</label><span>11 x ~94</span></div>
-                            <div><label>upatreezelda</label><span>841</span></div>
-                            <div><label>Neuro</label><span>3 x ~264</span></div>
-                            <div><label>FlorencioSC</label><span>14 x ~52</span></div>
-                            <div><label>ViBElol</label><span>4 x ~178</span></div>
-                            <div><label>JimDavisMTG</label><span>2 x ~333</span></div>
-                            <div><label>Infurneaux</label><span>485</span></div>
-                            <div><label>LowkoTV</label><span>478</span></div>
-                            <div><label>Harstem</label><span>337</span></div>
-                            <div><label>Apoptosis808</label><span>4 x ~63</span></div>
-                            <div><label>JimRsNg</label><span>223</span></div>
-                            <div><label>3DCLANru</label><span>3 x ~69</span></div>
-                            <div><label>Beastyqt</label><span>206</span></div>
-                            <div><label>blyonfire</label><span>143</span></div>
-                            <div><label>CranKy_Ducklings</label><span>125</span></div>
-                            <div><label>jdubya181</label><span>3 x ~42</span></div>
-                            <div><label>Grimmy_UK</label><span>4 x ~24</span></div>
-                            <div><label>marmellohh</label><span>90</span></div>
-                            <div><label>ninasc2</label><span>86</span></div>
-                            <div><label>probe_sc2</label><span>79</span></div>
-                            <div><label>SomeDrunkCanadian</label><span>74</span></div>
-                            <div><label>coconutgamezz</label><span>72</span></div>
-                            <div><label>xCrazyCritterx</label><span>3 x ~20</span></div>
-                            <div><label>rhyason6</label><span>3 x ~16</span></div>
-                            <div><label>booooooooooooooooooOm</label><span>44</span></div>
-                            <div><label>Louvrissa</label><span>39</span></div>
-                            <div><label>GuidebookGaming</label><span>34</span></div>
-                            <div><label>hupsaiya</label><span>26</span></div>
-                            <div><label>Eurystheussc2</label><span>23</span></div>
-                            <div><label>HoneyRyeRye</label><span>22</span></div>
-                            <div><label>TRICIAxPAIN</label><span>20</span></div>
-                            <div><label>FalconPaladin</label><span>2 x ~10</span></div>
-                            <div><label>captcanuck35</label><span>12</span></div>
-                            <div><label>danniiie</label><span>11</span></div>
-                            <div><label>steazyd</label><span>10</span></div>
-                            <div><label>capt_hapa</label><span>9</span></div>
-                            <div><label>Steelmold</label><span>9</span></div>
-                            <div><label>alon_levy</label><span>9</span></div>
-                            <div><label>dougsluggins</label><span>8</span></div>
-                            <div><label>Simmmmen</label><span>8</span></div>
-                            <div><label>renegadexstudios</label><span>7</span></div>
-                            <div><label>bauxxistreams</label><span>7</span></div>
-                            <div><label>MiNiRodZ</label><span>6</span></div>
-                            <div><label>vivid_sc</label><span>6</span></div>
-                            <div><label>for_the_huynh</label><span>6</span></div>
-                            <div><label>ArkeMeister</label><span>3</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="subathon-subgoal-list">
-                    <h4>Subgoals <span class="subathon-note">(also see the <a href="https://www.youtube.com/playlist?list=PLFUDU8AOevUebNZHOD-Tx9Yg4r57pfsZD" target="_blank">YouTube Playlist</a>)</span></h4>
-                    <table>
-                        <tr>
-                            <td>20</td>
-                            <td>Bacon PiG</td>
-                            <td>reached by <span>RoguerSC</span></td>
-                        </tr>
-                        <tr>
-                            <td>40</td>
-                            <td>Florencio Strats</td>
-                            <td>reached by <span>BloodFeast_Rambo</span></td>
-                        </tr>
-                        <tr>
-                            <td>60</td>
-                            <td>Apartment Tour</td>
-                            <td>reached by <span>Arminius2436</span></td>
-                        </tr>
-                        <tr>
-                            <td>80</td>
-                            <td>Make Pizza on Stream</td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>100</td>
-                            <td><a href="https://www.youtube.com/watch?v=QYKN3IW-_Rg" target="_blank">Live Rank Roulette</a></td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>120</td>
-                            <td>25 Bacon Push Ups</td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>140</td>
-                            <td>Eat Spoonful of Vegemite</td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>160</td>
-                            <td>Blindfold Challenge</td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>180</td>
-                            <td>Eunuch PiG</td>
-                            <td>reached by <span>coldhotococoa</span></td>
-                        </tr>
-                        <tr>
-                            <td>200</td>
-                            <td>PiG Merch Giveaway (Shirt+Joggers)</td>
-                            <td>reached by <span>Fenrack</span></td>
-                        </tr>
-                        <tr>
-                            <td>220</td>
-                            <td>Read Starcraft Fanfiction</td>
-                            <td>reached by <span>PI0x_</span></td>
-                        </tr>
-                        <tr>
-                            <td>240</td>
-                            <td>Do Full Workout</td>
-                            <td>reached by <span>capt_hapa</span></td>
-                        </tr>
-                        <tr>
-                            <td>260</td>
-                            <td>Eat Chilli Sauce</td>
-                            <td>reached by <span>undefined_bhvr</span></td>
-                        </tr>
-                        <tr>
-                            <td>280</td>
-                            <td>Spirits/Beer Tasting</td>
-                            <td>reached by <span>halprin</span></td>
-                        </tr>
-                        <tr>
-                            <td>300</td>
-                            <td>Make a New Crazy Sandwich</td>
-                            <td>reached by <span>maxxsann</span></td>
-                        </tr>
-                        <tr>
-                            <td>320</td>
-                            <td><a href="https://www.youtube.com/watch?v=dPqTjoMcniw" target="_blank">Teach Dot How to Protoss</a></td>
-                            <td>reached by <span>hungr4batl</span></td>
-                        </tr>
-                        <tr class="subathon-subgoal-extra">
-                            <td></td>
-                            <td><a href="https://www.youtube.com/watch?v=V76u4krkp8M" target="_blank">Dot Toss Bronze to GM #2</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>340</td>
-                            <td>Order New Costume From EBay</td>
-                            <td>reached by <span>misdre</span></td>
-                        </tr>
-                        <tr>
-                            <td>360</td>
-                            <td>Eat Durian</td>
-                            <td>reached by <span>hobowizz</span></td>
-                        </tr>
-                        <tr>
-                            <td>380</td>
-                            <td>Chat Chooses New Emote</td>
-                            <td>reached by <span>BloodFeast_Rambo</span></td>
-                        </tr>
-                        <tr>
-                            <td>400</td>
-                            <td>Eat X2 Spicy Ramen (and Cry)</td>
-                            <td>reached by <span>impirion</span></td>
-                        </tr>
-                        <tr>
-                            <td>420</td>
-                            <td>Table Tennis Match vs Dot</td>
-                            <td>reached by <span>creativeburr</span></td>
-                        </tr>
-                        <tr>
-                            <td>440</td>
-                            <td>Eat 6 Spoons Peanut Butter</td>
-                            <td>reached by <span>onearmdwonder</span></td>
-                        </tr>
-                        <tr>
-                            <td>460</td>
-                            <td><a href="https://www.youtube.com/watch?v=csHy_VrpMXk" target="_blank">Play a Game Chosen By Chat</a></td>
-                            <td>reached by <span>withoutclass</span></td>
-                        </tr>
-                        <tr>
-                            <td>480</td>
-                            <td>Eat Half a Lemon</td>
-                            <td>reached by <span>GrimmjowEX</span></td>
-                        </tr>
-                        <tr>
-                            <td>500</td>
-                            <td>PiG Will Do a Bronze to GM</td>
-                            <td>reached by <span>HedgyV</span></td>
-                        </tr>
-                        <tr>
-                            <td>600</td>
-                            <td>Ladder Monobattles</td>
-                            <td>reached by <span>Fenrack</span></td>
-                        </tr>
-                        <tr>
-                            <td>620</td>
-                            <td>Thumb War vs Dot</td>
-                            <td>reached by <span>TheHavior</span></td>
-                        </tr>
-                        <tr>
-                            <td>640</td>
-                            <td>Play with Mouse in Left Hand</td>
-                            <td>reached by <span>Fenrack</span></td>
-                        </tr>
-                        <tr>
-                            <td>660</td>
-                            <td><a href="https://www.youtube.com/watch?v=AIZ_Qc0cdLA" target="_blank">PiG vs Subs (Archon, etc)</a></td>
-                            <td>reached by <span>spud__doctor</span></td>
-                        </tr>
-                        <tr>
-                            <td>680</td>
-                            <td>Commentate a Random non-SC Video</td>
-                            <td>reached by <span>kalinstar</span></td>
-                        </tr>
-                        <tr>
-                            <td>700</td>
-                            <td><a href="https://www.youtube.com/watch?v=eT0LHtE0z2Y" target="_blank">PiG Roasts Replays</a></td>
-                            <td>reached by <span>summilux</span></td>
-                        </tr>
-                        <tr>
-                            <td>720</td>
-                            <td>Co-op on Brutal with Viewers</td>
-                            <td>reached by <span>Glazerbeam</span></td>
-                        </tr>
-                        <tr>
-                            <td>1000</td>
-                            <td>Shower on Stream (with Boardies)</td>
-                            <td>reached by <span>methadreamt</span></td>
-                        </tr>
-                        <tr>
-                            <td>2000</td>
-                            <td>Create Onlyfans Account</td>
-                            <td>reached by <span>ShamBadger</span></td>
-                        </tr>
-                        <tr>
-                            <td>2200</td>
-                            <td>Commentate a Random non-SC Video #2</td>
-                            <td>reached by <span>pinion_</span></td>
-                        </tr>
-                        <tr>
-                            <td>2300</td>
-                            <td><a href="https://www.youtube.com/watch?v=DHyx28AU3sE" target="_blank">PiG Roasts #2</a></td>
-                            <td>reached by <span>lukenukemstreaming</span></td>
-                        </tr>
-                        <tr>
-                            <td>2400</td>
-                            <td>PiG Shows Himself Exercising Outside</td>
-                            <td>reached by <span>apollogod1990</span></td>
-                        </tr>
-                        <tr>
-                            <td>2500</td>
-                            <td>Commentate Viewer Archon Matches</td>
-                            <td>reached by <span>apollogod1990</span></td>
-                        </tr>
-                        <tr>
-                            <td>2600</td>
-                            <td>Dot Cracks Egg on PiG's Head</td>
-                            <td>reached by <span>ian_m7</span></td>
-                        </tr>
-                        <tr>
-                            <td>2700</td>
-                            <td><a href="https://www.youtube.com/watch?v=BB93CqvEUD4" target="_blank">Real Twitch Plays PiG</a></td>
-                            <td>reached by <span>bugsplatter23</span></td>
-                        </tr>
-                        <tr>
-                            <td>2800</td>
-                            <td>GSL Supper Tournament Watch Party</td>
-                            <td>reached by <span>zaomee</span></td>
-                        </tr>
-                        <tr>
-                            <td>2900</td>
-                            <td>Play Overcooked 2 with Dot</td>
-                            <td>reached by <span>Oldmanguardian</span></td>
-                        </tr>
-                        <tr>
-                            <td>3000</td>
-                            <td><a href="https://www.youtube.com/watch?v=m3lU23dQGYU" target="_blank">Play Starcraft Remastered</a></td>
-                            <td>reached by <span>SqueakyBJsFTW</span></td>
-                        </tr>
-                        <tr>
-                            <td>3100</td>
-                            <td>PiG Gives Tour of Local Area</td>
-                            <td>reached by <span>ShamBadger</span></td>
-                        </tr>
-                        <tr>
-                            <td>3200</td>
-                            <td>Play Scary/Horror Game</td>
-                            <td>reached by <span>Turora</span></td>
-                        </tr>
-                        <tr>
-                            <td>3400</td>
-                            <td><a href="https://www.youtube.com/watch?v=zSjHXdH8S2g" target="_blank">Cast Viewer Beast of the Hill #2</a></td>
-                            <td>reached by <span>cincopation</span></td>
-                        </tr>
-                        <tr>
-                            <td>3550</td>
-                            <td><a href="https://www.youtube.com/watch?v=L9lHOmkhGcI" target="_blank">PiG Can't Swear For 1Hr (Penalty = +150s/word)</a></td>
-                            <td>reached by <span>TypeOne55</span></td>
-                        </tr>
-                        <tr>
-                            <td>3700</td>
-                            <td>PiG Eats in Restaurant Ouside</td>
-                            <td>reached by <span>Lioncat55</span></td>
-                        </tr>
-                        <tr>
-                            <td>3850</td>
-                            <td>Play Archon Mode with Dot</td>
-                            <td>reached by <span>LordByrnsy</span></td>
-                        </tr>
-                        <tr>
-                            <td>4000</td>
-                            <td>Sell PiG's Shower Water (Aus Only)</td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>4150</td>
-                            <td><a href="https://www.youtube.com/watch?v=kW1tm56V5L0" target="_blank">PiG Roasts #3</a></td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>4300</td>
-                            <td>Make Lasagna on Stream</td>
-                            <td>reached by <span>The_Original_Pod</span></td>
-                        </tr>
-                        <tr>
-                            <td>4450</td>
-                            <td><a href="https://www.youtube.com/watch?v=cMnXFYg8__A" target="_blank">Dot Shaves PiG's Back + Shoulders</a></td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>4600</td>
-                            <td>PiG vs As Many Players As Possible in SC</td>
-                            <td>reached by <span>OverThoughtGaming</span></td>
-                        </tr>
-                        <tr>
-                            <td>4750</td>
-                            <td>Blindfolder Taste Test</td>
-                            <td>reached by <span>backspace_101</span></td>
-                        </tr>
-                        <tr>
-                            <td>4900</td>
-                            <td>Play Chess vs Viewers</td>
-                            <td>reached by <span>aramsham</span></td>
-                        </tr>
-                        <tr>
-                            <td>5000</td>
-                            <td>Dye Hair, Colour Chosen by Chat</td>
-                            <td>reached by <span>apollogod1990</span></td>
-                        </tr>
-                        <tr>
-                            <td>5200</td>
-                            <td><a href="https://www.youtube.com/watch?v=poLWTQ3bXr8" target="_blank">Play Starcraft Charades</a></td>
-                            <td>reached by <span>apollogod1990</span></td>
-                        </tr>
-                        <tr>
-                            <td>5400</td>
-                            <td>PiG Gives Tour of Sydney Harbour</td>
-                            <td>reached by <span>CataStarcraft</span></td>
-                        </tr>
-                        <tr>
-                            <td>5600</td>
-                            <td><a href="https://www.youtube.com/watch?v=QinFMsuAxAQ" target="_blank">Cast Viewer Tournament</a></td>
-                            <td>reached by <span>bugsplatter23</span></td>
-                        </tr>
-                        <tr>
-                            <td>5800</td>
-                            <td>PiG Gives Tour of Bondi Beach</td>
-                            <td>reached by <span>apollogod1990</span></td>
-                        </tr>
-                        <tr>
-                            <td>6000</td>
-                            <td>Shave Head</td>
-                            <td>reached by <span>B3anm3ist3r</span></td>
-                        </tr>
-                        <tr>
-                            <td>6001</td>
-                            <td>Dot Cries</td>
-                            <td>reached by <span>B3anm3ist3r</span></td>
-                        </tr>
-                        <tr>
-                            <td>6165</td>
-                            <td><a href="https://www.youtube.com/watch?v=QAzjc-mF3io" target="_blank">Cast Super Hour of Florencio Files</a></td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>6330</td>
-                            <td>Dusty Clean Up Camera</td>
-                            <td>reached by <span>CataStarcraft</span></td>
-                        </tr>
-                        <tr>
-                            <td>6500</td>
-                            <td>Real Twitch Plays SC:R with Carbot Skin</td>
-                            <td>reached by <span>apollogod1990</span></td>
-                        </tr>
-                        <tr>
-                            <td>6666</td>
-                            <td><a href="https://www.youtube.com/watch?v=cjZq5AyDmyE" target="_blank">Visit Shops Wearing Roach Costume</a></td>
-                            <td>reached by <span>Kalthonia</span></td>
-                        </tr>
-                        <tr>
-                            <td>6800</td>
-                            <td>Play Recent Game, Chosen by Viewers</td>
-                            <td>reached by <span>thatbroc</span></td>
-                        </tr>
-                        <tr>
-                            <td>6969</td>
-                            <td>Publish Onlypig's Second Post</td>
-                            <td>reached by <span>bugsplatter23</span></td>
-                        </tr>
-                        <tr>
-                            <td>7000</td>
-                            <td>60 min of Silent Meditating on Stream</td>
-                            <td>reached by <span>ShamBadger</span></td>
-                        </tr>
-                        <tr>
-                            <td>7165</td>
-                            <td><a href="https://www.youtube.com/watch?v=xGKZNFowQ3o" target="_blank">PiG Roasts #4</a></td>
-                            <td>reached by <span>cascade_fury</span></td>
-                        </tr>
-                        <tr>
-                            <td>7330</td>
-                            <td>Go Bouldering on Stream</td>
-                            <td>reached by <span>algosc2</span></td>
-                        </tr>
-                        <tr>
-                            <td>7495</td>
-                            <td>Cook 3 Different Types of Pork</td>
-                            <td>reached by <span>maxxsann</span></td>
-                        </tr>
-                        <tr>
-                            <td>7660</td>
-                            <td>Cast Viewer Beast of the Hill #3</td>
-                            <td>reached by <span>salvetheron</span></td>
-                        </tr>
-                        <tr>
-                            <td>7825</td>
-                            <td>Play Doom Eternal - Ultra Nightmare</td>
-                            <td>reached by <span>joepro99</span></td>
-                        </tr>
-                        <tr>
-                            <td>8000</td>
-                            <td>Make Romantic Dinner For Dot</td>
-                            <td>reached by <span>Raist___</span></td>
-                        </tr>
-                        <tr>
-                            <td>8165</td>
-                            <td><a href="https://www.youtube.com/watch?v=So3624dtwcc" target="_blank">Cast Starcraft while Eating Hot Wings</a></td>
-                            <td>reached by <span>spud__doctor</span></td>
-                        </tr>
-                        <tr>
-                            <td>8330</td>
-                            <td>Table Tennis Rematch Bo69 vs Dot</td>
-                            <td>reached by <span>saundo85</span></td>
-                        </tr>
-                        <tr>
-                            <td>8495</td>
-                            <td>Buy Aang Costume to Cosplay when Bald</td>
-                            <td>reached by <span>ihal20</span></td>
-                        </tr>
-                        <tr>
-                            <td>8660</td>
-                            <td>Play MTG Arena</td>
-                            <td>reached by <span>ihal20</span></td>
-                        </tr>
-                        <tr>
-                            <td>8825</td>
-                            <td><a href="https://www.youtube.com/watch?v=sZ44FGiutvo" target="_blank">Cast Smooth Brain Players</a></td>
-                            <td>reached by <span>ihal20</span></td>
-                        </tr>
-                        <tr>
-                            <td>9000</td>
-                            <td>1 Hour Jogging Stream</td>
-                            <td>reached by <span>Fly_With_Nick</span></td>
-                        </tr>
-                        <tr>
-                            <td>10000</td>
-                            <td><a href="https://www.youtube.com/watch?v=WpctoO8_iH4" target="_blank">Hot Tub Stream</a></td>
-                            <td>reached by <span>spud__doctor</span></td>
-                        </tr>
-                        <tr>
-                            <td>10300</td>
-                            <td><a href="https://www.youtube.com/watch?v=wVxlJ9r5B6A" target="_blank">Do a Thongy (Like a Shooey)</a></td>
-                            <td>reached by <span>Tycolosis</span></td>
-                        </tr>
-                        <tr>
-                            <td>10600</td>
-                            <td>Play Among Us with Viewers</td>
-                            <td>reached by <span>thatbroc</span></td>
-                        </tr>
-                        <tr>
-                            <td>11000</td>
-                            <td><a href="https://www.youtube.com/watch?v=plwH4Q7m89M" target="_blank">Take Dot Out, with Babysitter for Stream</a></td>
-                            <td>reached by <span>SomeDrunkCanadian</span></td>
-                        </tr>
-                        <tr>
-                            <td>11300</td>
-                            <td>Online Board Games with Viewers</td>
-                            <td>reached by <span>BloodFeast_Rambo</span></td>
-                        </tr>
-                        <tr>
-                            <td>11500</td>
-                            <td><a href="https://www.youtube.com/watch?v=oG8q_he8fD0" target="_blank">Judge Smooth Brain Auditions</a></td>
-                            <td>reached by <span>MichaelTheArc42</span></td>
-                        </tr>
-                        <tr>
-                            <td>11750</td>
-                            <td><a href="https://www.youtube.com/watch?v=VKMcRlZpBhY" target="_blank">Play 2v2 On Two Accounts At Once</a></td>
-                            <td>reached by <span>MaruAmoriani</span></td>
-                        </tr>
-                        <tr>
-                            <td>12000</td>
-                            <td>Newbie Stream</td>
-                            <td>reached by <span>cascade_fury</span></td>
-                        </tr>
-                        <tr>
-                            <td>12250</td>
-                            <td>Chat Teaches Dot About Coding</td>
-                            <td>reached by <span>graywolf09</span></td>
-                        </tr>
-                        <tr>
-                            <td>12500</td>
-                            <td>Twitch Starcraft Pub Crawl</td>
-                            <td>reached by <span>graywolf09</span></td>
-                        </tr>
-                        <tr>
-                            <td>12750</td>
-                            <td>Sell Pink Hair After PiG Shaves Head</td>
-                            <td>reached by <span>feardragon64</span></td>
-                        </tr>
-                        <tr>
-                            <td>13000</td>
-                            <td><a href="https://www.youtube.com/watch?v=DfI8ytoteNM" target="_blank">Hot Wings No Swearing Flo Files Challenge</a></td>
-                            <td>reached by <span>graywolf09</span></td>
-                        </tr>
-                        <tr>
-                            <td>13250</td>
-                            <td><a href="https://www.youtube.com/watch?v=PjznwiOJycY" target="_blank">Dot's Toss Bronze to GM #3</a></td>
-                            <td>reached by <span>apollogod1990</span></td>
-                        </tr>
-                        <tr>
-                            <td>13500</td>
-                            <td>Cast a Different eSport, Chosen by Chat</td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>13750</td>
-                            <td><a href="https://www.youtube.com/watch?v=fqPkI3fZQB4" target="_blank">Hold Out Challenge vs Viewers</a></td>
-                            <td>reached by <span>MichaelTheArc42</span></td>
-                        </tr>
-                        <tr>
-                            <td>14000</td>
-                            <td>Movie Watch Party, Chosen by Chat</td>
-                            <td>reached by <span>MichaelTheArc42</span></td>
-                        </tr>
-                        <tr>
-                            <td>14250</td>
-                            <td>Play Chess vs Viewer #2</td>
-                            <td>reached by <span>espertk</span></td>
-                        </tr>
-                        <tr>
-                            <td>14500</td>
-                            <td><a href="https://www.youtube.com/watch?v=JAtNwA38aWc" target="_blank">Smurf Detective Live Stream</a></td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>14750</td>
-                            <td>Write a Subathon Song with Dot</td>
-                            <td>reached by <span>evrykind_</span></td>
-                        </tr>
-                        <tr>
-                            <td>15000</td>
-                            <td><a href="https://www.youtube.com/watch?v=h5HpY4MmMS4" target="_blank">Make Other Subathoners Suffer</a></td>
-                            <td>reached by <span>GulNazNihari</span></td>
-                        </tr>
-                        <tr>
-                            <td>15250</td>
-                            <td>Play Co-op #2</td>
-                            <td>reached by <span>graywolf09</span></td>
-                        </tr>
-                        <tr>
-                            <td>15500</td>
-                            <td>Publish Onlyfans Content #3</td>
-                            <td>reached by <span>TemujinGenghis</span></td>
-                        </tr>
-                        <tr>
-                            <td>15750</td>
-                            <td>PiG vs Viewers on Funny Maps</td>
-                            <td>reached by <span>thatbroc</span></td>
-                        </tr>
-                        <tr>
-                            <td>16000</td>
-                            <td>Table Tennis vs Dot - First To 69</td>
-                            <td>reached by <span>maratus102</span></td>
-                        </tr>
-                        <tr>
-                            <td>16250</td>
-                            <td>Play Among Us with Viewers #2</td>
-                            <td>reached by <span>voxyoid</span></td>
-                        </tr>
-                        <tr>
-                            <td>16500</td>
-                            <td>PiG Roasts #5</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>16750</td>
-                            <td>Dot Gives Victory/Farewell Concert</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>17000</td>
-                            <td>PiG Pro Tournament with $2000 Prize Pool</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                    <div class="subathon-note">Editorial remark: Holy shit, this is a long list. What a legends.</div>
-                </div><script>(0,window.jQuery)(".subathon-subgoal-list a").click(t=>{if(console.log(t.button),0==t.button)if(!t.ctrlKey){const e="https://www.youtube.com/embed/"+t.target.href.match(/v=(.*)/)[1];lity(e),t.preventDefault()}})</script>
-            </div>
-        </div><script>!function(){var n=window.jQuery,t=function(t){var e=n(t.parentElement).width(),o=n(t),a=parseInt(o.css("column-width")),i=parseInt(o.css("column-gap")),s=(o.children().length,Math.floor((e+i)/(a+i)));o.css("max-width",s*a+(s-1)*i+"px")};n((function(){n(".subathon-multicolumn .subathon-leaderboard-items").each((e,o)=>{n(window).resize(()=>{t(o),setTimeout(()=>t(o),1e3)}),t(o)})}))}()</script>
+            </div><script>!function(){var n=window.jQuery,t=function(t){var e=n(t.parentElement).width(),o=n(t),a=parseInt(o.css("column-width")),i=parseInt(o.css("column-gap")),s=(o.children().length,Math.floor((e+i)/(a+i)));o.css("max-width",s*a+(s-1)*i+"px")};n((function(){n(".subathon-multicolumn .subathon-leaderboard-items").each((e,o)=>{n(window).resize(()=>{t(o),setTimeout(()=>t(o),1e3)}),t(o)})}))}()</script>
+        </div>
     </div>
 </body><script>$("#toggle-dark-mode").click((function(){$("html").toggleClass("wp-dark-mode-active"),window.dispatchEvent(new CustomEvent("wp_dark_mode",{detail:{active:$("html").hasClass("wp-dark-mode-active")}}))}))</script>
 
