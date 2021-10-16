@@ -1,0 +1,118 @@
+<!--M#s0--><style>
+
+    .pigsty-leaderboard {
+        display: inline-block;
+        width: 250px;
+        max-height: 300px;
+        vertical-align: top;
+    }
+    .pigsty-leaderboard-separator {
+        display: inline-block;
+        width: 20px;
+    }
+    .pigsty-leaderboard table {
+        font-family: Poppins;
+        font-size: 12px;
+        line-height: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        empty-cells: show;
+    }            
+
+    .pigsty-leaderboard-header td {
+        font-size: 10px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #999;
+    }
+    .pigsty-leaderboard-header td:nth-child(3) {
+        text-align: right;
+    }
+    
+    .pigsty-leaderboard td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .pigsty-leaderboard td:nth-child(1) {
+        text-align: center;
+        width: 15px;
+        padding-top: 2px;
+        color: #999;
+    }            
+    .pigsty-leaderboard td:nth-child(2) {
+        max-width: 180px;
+        width: 180px;
+    }
+    .pigsty-leaderboard td:nth-child(3) {
+        width: 55px;
+        text-align: right;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+
+    .pigsty-leaderboard tr.place-1 td:nth-child(2) {
+        padding-top: 0;
+        font-size: 16px;
+    }
+    .pigsty-leaderboard tr.place-2 td:nth-child(2) {
+        padding-top: 0;
+        font-size: 14px;
+    }
+    .pigsty-leaderboard tr.place-3 td:nth-child(2) {
+        padding-top: 0;
+        font-size: 14px;
+    }
+</style>
+<div id="pigsty-leaderboard-1" class="pigsty-leaderboard pigsty-leaderboard-donations"><img src alt="Pigsty leaderboard image" width="250px" height="50px">
+    <table>
+        <tr class="pigsty-leaderboard-header">
+            <td>&nbsp;</td>
+            <td>Supporter</td>
+            <td>Donations</td>
+        </tr>
+    </table><script>
+        (() => {
+            const feedUrl = 'https://twitch.cascadenexus.net/api/feed/172f110c43114c94b3a14c01b3393dca';
+            window.fetch(feedUrl)
+            .then((resp) => resp.json())
+            .then((json) => {
+                const table = document.getElementById('pigsty-leaderboard-1').getElementsByTagName('tbody')[0];
+                json.items.forEach((item, i) => {
+                    const row = document.createElement('tr');
+                    if (i <= 2)
+                        row.classList.add(`place-${i+1}`);
+                    row.innerHTML = `<td>${i+1}</td><td>${item.userName}</td><td>${item.donationCurrency} ${item.donationAmount.toFixed(2)}</td>`;
+                    table.appendChild(row);
+                });
+            });
+        })();
+    </script>
+</div>
+<div class="pigsty-leaderboard-separator"></div>
+<div id="pigsty-leaderboard-2" class="pigsty-leaderboard pigsty-leaderboard-bits"><img src alt="Pigsty leaderboard image" width="250px" height="50px">
+    <table>
+        <tr class="pigsty-leaderboard-header">
+            <td>&nbsp;</td>
+            <td>Supporter</td>
+            <td>Bits</td>
+        </tr>
+    </table><script>
+        (() => {
+            const feedUrl = 'https://twitch.cascadenexus.net/api/twitch/x5_pig/bits/top?since=2021-10-01&till=2021-10-31&count=10';
+            window.fetch(feedUrl)
+            .then((resp) => resp.json())
+            .then((json) => {
+                const table = document.getElementById('pigsty-leaderboard-2').getElementsByTagName('tbody')[0];
+                json.items.forEach((item, i) => {
+                    const row = document.createElement('tr');
+                    if (i <= 2)
+                        row.classList.add(`place-${i+1}`);
+                    row.innerHTML = `<td>${i+1}</td><td>${item.userName}</td><td>${item.bits}</td>`;
+                    table.appendChild(row);
+                });
+            });
+        })();
+    </script>
+</div>
+<!--M/-->
