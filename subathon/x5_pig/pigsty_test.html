@@ -325,20 +325,23 @@ html.wp-dark-mode-active a:not(.wp-dark-mode-ignore), html.wp-dark-mode-active a
                 <div class="container single-page-container">
                     <article id="post-1248" class="bg-page-article post-1248 page type-page status-publish hentry">
                         <div class="bge-entry-content"><style>
+    .pigsty-img {
+        line-height: 0em;
+        margin-bottom: 15px;
+    }
+    .pigsty-leaderboard-img {
+        line-height: 0em;
+        margin-bottom: 0px;
+    }
+    .info-box {
+        margin-bottom: 15px;
+    }
     .pigsty-leaderboard {
         display: inline-block;
         width: 250px;
-        max-height: 300px;
+        max-height: 500px;
         vertical-align: top;
         margin-bottom: 20px;
-    }
-    .pigsty-leaderboard .pigsty-img img {
-        width: 400px;
-        height: 200px;
-    }
-    .pigsty-leaderboard img.pigsty-leaderboard-img {
-        width: 250px;
-        height: 50px;
     }
     .pigsty-leaderboard-separator {
         display: inline-block;
@@ -401,7 +404,7 @@ html.wp-dark-mode-active a:not(.wp-dark-mode-ignore), html.wp-dark-mode-active a
         font-size: 14px;
     }
     .info-box strong {
-        width: 120px;
+        width: 100px;
         font-weight: normal;
         display: inline-block;
     }
@@ -416,26 +419,22 @@ html.wp-dark-mode-active a:not(.wp-dark-mode-ignore), html.wp-dark-mode-active a
                                 <div class="wp-block-column">
                                     <h3>PiG Sty Festival</h3>
                                     <p>The&nbsp;<strong>PiG Sty Festival</strong>&nbsp;is a week-long 24 hours a day event featuring a high level pro&nbsp;tournament, entertaining side-show show matches, and frivolous carnival games.</p>
-                                    <p class="info-comment">More description, price pool? Or just refer to announcement?</p>
-                                </div>
-                                <div class="wp-block-column" style="flex-basis:400px">
-                                    <figure class="wp-block-image pigsty-img"><img alt src="https://i.imgur.com/AQ1qVyr.png" width="400" height="200"></figure>
-                                    <p class="info-box" style="font-size:0.8em"><strong>Announcement:</strong> <a href="https://tl.net/forum/sc2-tournaments/578485-pig-sty-festival-25-31-oct" target="_blank" rel="noreferrer noopener">tl.net forum post</a><br><strong>Bracket:</strong> <a href="https://liquipedia.net/starcraft2/PiG_Sty_Festival" target="_blank" rel="noreferrer noopener">liquipedia.net bracket</a><br><strong>Stream:</strong> <a href="https://twitch.tv/x5_pig" target="_blank" rel="noreferrer noopener">twitch.tv/x5_pig</a><br><strong>Donations:</strong> <a href="https://streamlabs.com/x5_pig/tip" target="_blank" rel="noreferrer noopener">PiG's donation page</a></p>
-                                </div>
-                            </div>
-                            <div class="wp-block-columns">
-                                <div class="wp-block-column">
-                                    <p class="info-comment">Goals and challenges?</p>
+                                    <h3>Donation Goals and Show Matches</h3>
+                                    <p>TBD</p>
                                 </div>
                                 <div class="wp-block-column" style="flex-basis:250px">
-                                    <p class="info-comment">Total donations/bits/subs, maybe timer? (timer is probably too much effort to actually sync up on stream)</p>
-                                    <div id="pigsty-leaderboard-1" class="pigsty-leaderboard pigsty-leaderboard-donations"><img src="https://i.imgur.com/AQ1qVyr.png" alt="Pigsty Donations Leaderboard" class="pigsty-leaderboard-img">
+                                    <figure class="wp-block-image pigsty-img"><img src="https://www.pigstarcraft.com/wp-content/uploads/2021/10/pigfest-logo_bg.png" alt></figure>
+                                    <p class="info-box" style="font-size:0.7em"><strong>Announcement:</strong> <a href="https://tl.net/forum/sc2-tournaments/578485-pig-sty-festival-25-31-oct" target="_blank" rel="noreferrer noopener">tl.net forum post</a><br><strong>Bracket:</strong> <a href="https://liquipedia.net/starcraft2/PiG_Sty_Festival" target="_blank" rel="noreferrer noopener">liquipedia.net</a><br><strong>Stream:</strong> <a href="https://twitch.tv/x5_pig" target="_blank" rel="noreferrer noopener">twitch.tv/x5_pig</a><br><strong>Donations:</strong> <a href="https://streamlabs.com/x5_pig/tip" target="_blank" rel="noreferrer noopener">PiG's donation page</a></p>
+                                    <figure class="wp-block-image pigsty-leaderboard-img"><img src="https://www.pigstarcraft.com/wp-content/uploads/2021/10/pigfest-leaderboard.png" alt="Pigsty Donations Leaderboard"></figure>
+                                    <div id="pigsty-leaderboard-1" class="pigsty-leaderboard pigsty-leaderboard-donations">
                                         <table>
-                                            <tr class="pigsty-leaderboard-header">
-                                                <td>&nbsp;</td>
-                                                <td>Supporter</td>
-                                                <td>Donations</td>
-                                            </tr>
+                                            <tbody>
+                                                <tr class="pigsty-leaderboard-header">
+                                                    <td>&nbsp;</td>
+                                                    <td>Supporter</td>
+                                                    <td>Donations</td>
+                                                </tr>
+                                            </tbody>
                                         </table><script>
             (() => {
                 const feedUrl = 'https://twitch.cascadenexus.net/api/feed/172f110c43114c94b3a14c01b3393dca';
@@ -448,31 +447,6 @@ html.wp-dark-mode-active a:not(.wp-dark-mode-ignore), html.wp-dark-mode-active a
                         if (i <= 2)
                             row.classList.add(`place-${i+1}`);
                         row.innerHTML = `<td>${i+1}</td><td>${item.userName}</td><td>${item.donationCurrency}&nbsp;${item.donationAmount.toFixed(2)}</td>`;
-                        table.appendChild(row);
-                    });
-                });
-            })();
-        </script>
-                                    </div>
-                                    <div id="pigsty-leaderboard-2" class="pigsty-leaderboard pigsty-leaderboard-bits"><img src="https://i.imgur.com/AQ1qVyr.png" alt="Pigsty Donations Leaderboard" class="pigsty-leaderboard-img">
-                                        <table>
-                                            <tr class="pigsty-leaderboard-header">
-                                                <td>&nbsp;</td>
-                                                <td>Supporter</td>
-                                                <td>Bits</td>
-                                            </tr>
-                                        </table><script>
-            (() => {
-                const feedUrl = 'https://twitch.cascadenexus.net/api/feed/172f110c43114c94b3a14c01b3393dcb';
-                window.fetch(feedUrl)
-                .then((resp) => resp.json())
-                .then((json) => {
-                    const table = document.getElementById('pigsty-leaderboard-2').getElementsByTagName('tbody')[0];
-                    json.items.forEach((item, i) => {
-                        const row = document.createElement('tr');
-                        if (i <= 2)
-                            row.classList.add(`place-${i+1}`);
-                        row.innerHTML = `<td>${i+1}</td><td>${item.userName}</td><td>${item.bits}</td>`;
                         table.appendChild(row);
                     });
                 });
