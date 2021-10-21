@@ -67,36 +67,44 @@
         width: 70px;
     }
 
-    #content .pigsty-goals td.pigsty-showmatch > span {
+    #content .pigsty-goals table tr td:nth-child(1) > div {
+        color: var(--wp-dark-mode-link) !important;
+    }
+
+    #content .pigsty-goals div.pigsty-showmatch > div {
+        display: inline-block;
+    } 
+
+    #content .pigsty-goals div.pigsty-showmatch > span {
         color: var(--wp-dark-mode-link) !important;
         cursor: pointer;
     } 
 
-    #content .pigsty-goals td.pigsty-showmatch > span.collapse-hint {
+    #content .pigsty-goals div.pigsty-showmatch > span.collapse-hint {
         color: #999 !important;
         cursor: default;
         font-style: italic;
         font-size: 0.8em;
     } 
 
-    #content .pigsty-goals td.pigsty-showmatch > div {
+    #content .pigsty-goals div.pigsty-showmatch-details {
         border-top: 1px solid;
         border-bottom: 1px solid;
         padding: 15px 0;
     } 
 
-    #content .pigsty-goals td.pigsty-showmatch > div img {
+    #content .pigsty-goals div.pigsty-showmatch-details img {
         float: left;
         max-width: 250px;
         margin-right: 15px;
     } 
 
-    #content .pigsty-goals td.pigsty-showmatch > div img.highlight {
+    #content .pigsty-goals div.pigsty-showmatch-details img.highlight {
         float: none;
         max-width: 100%;
     } 
 
-    #content .pigsty-goals td.pigsty-showmatch > div span:last-child {
+    #content .pigsty-goals div.pigsty-showmatch-details span:last-child {
         display: block;
         clear: both;
     } 
@@ -188,28 +196,52 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td>100</td>
-                                        <td>Slap Real Bacon On PiG</td>
+                                        <td>
+                                            <div>100</div>
+                                        </td>
+                                        <td>
+                                            <div>Slap Real Bacon On PiG</div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>500</td>
-                                        <td>Smash An Egg On PiG’s Head</td>
+                                        <td>
+                                            <div>500</div>
+                                        </td>
+                                        <td>
+                                            <div>Smash An Egg On PiG’s Head</div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>1000</td>
-                                        <td>Eat Kangaroo x 2 Drops Of The Last Dab (1M Scoville)</td>
+                                        <td>
+                                            <div>1000</div>
+                                        </td>
+                                        <td>
+                                            <div>Eat Kangaroo x 2 Drops Of The Last Dab (1M Scoville)</div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>3000</td>
-                                        <td>1 Wax Strip On Arms Or Leg</td>
+                                        <td>
+                                            <div>3000</div>
+                                        </td>
+                                        <td>
+                                            <div>1 Wax Strip On Arms Or Leg</div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>4000</td>
-                                        <td>Get VIP Badge (You Can Still Lose This If You’re A Douchebag)</td>
+                                        <td>
+                                            <div>4000</div>
+                                        </td>
+                                        <td>
+                                            <div>Get VIP Badge (You Can Still Lose This If You’re A Douchebag)</div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>5000</td>
-                                        <td>Slap Real Bacon Once For Every $100 Raised This PiGFest<br>(This Will Be Done At The End Of The Final Day)</td>
+                                        <td>
+                                            <div>5000</div>
+                                        </td>
+                                        <td>
+                                            <div>Slap Real Bacon Once For Every $100 Raised This PiGFest<br>(This Will Be Done At The End Of The Final Day)</div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -226,202 +258,379 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td>420</td>
-                                        <td class="pigsty-showmatch"><span>Show Match: Scarlett Holdout Challenge</span> <span class="collapse-hint">(click for details)</span>
-                                            <div class="pigsty-showmatch" style="display: none;"><img src="https://i.imgur.com/n34O2A4.jpg"><strong>Players:</strong>&nbsp;<span>Scarlett</span><br><strong>Format:</strong>&nbsp;<span>How long can you last in a game vs Scarlett! Have you ever wanted to be smacked in the face by a starcraft pro? This may involve floating buildings or other shenanigans to extend the time longer while Scarlett basically plays whack-a-mole.</span><span></span></div>
+                                        <td>
+                                            <div>420</div>
+                                        </td>
+                                        <td>
+                                            <div class="pigsty-showmatch"><span>Show Match: Scarlett Holdout Challenge</span> <span class="collapse-hint">(click for details)</span></div>
+                                            <div class="pigsty-showmatch-details" style="display: none;"><img src="https://i.imgur.com/n34O2A4.jpg"><strong>Players:</strong>&nbsp;<span>Scarlett</span><br><strong>Format:</strong>&nbsp;<span>How long can you last in a game vs Scarlett! Have you ever wanted to be smacked in the face by a starcraft pro? This may involve floating buildings or other shenanigans to extend the time longer while Scarlett basically plays whack-a-mole.</span><span></span></div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>500</td>
-                                        <td>Apartment Tour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>600</td>
-                                        <td>Put On Roach PiG</td>
-                                    </tr>
-                                    <tr>
-                                        <td>700</td>
-                                        <td>Take A Shot Of Pickle Juice</td>
-                                    </tr>
-                                    <tr>
-                                        <td>800</td>
-                                        <td>Air Fryer 1: Meat Pie</td>
-                                    </tr>
-                                    <tr>
-                                        <td>900</td>
-                                        <td>Ear Lick ASMR</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1000</td>
-                                        <td>Have Maynarde Co-Cast The Final Day</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1100</td>
-                                        <td>Channel Artosis For 1 Game</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1200</td>
-                                        <td>100 Roach Squats</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1300</td>
-                                        <td>PiG vs Dot Slime Volleyball Bo7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1337</td>
-                                        <td>Tier List</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1500</td>
-                                        <td>Drink Raw Egg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1750</td>
-                                        <td>3rd Place Group Players Earn $50 Prize Money</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2000</td>
-                                        <td>Eat An Onion</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2500</td>
-                                        <td>4th Place Group Players Earn $25 Prize Money</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3000</td>
-                                        <td>Play Like Florencio For An Hour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3500</td>
-                                        <td>Cast One EPT Game In Full Ozzy Mode</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4000</td>
-                                        <td>Air Fryer 2: Hot Wings</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4500</td>
-                                        <td>Guess The MMR</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5000</td>
-                                        <td class="pigsty-showmatch"><span>Show Match: Cheesedown Bo11 Ft. Has And Bly</span> <span class="collapse-hint">(click for details)</span>
-                                            <div class="pigsty-showmatch" style="display: none;"><img src="https://i.imgur.com/BM9oIhp.jpg"><strong>Players:</strong>&nbsp;<span>Bly, Has</span><br><strong>Format:</strong>&nbsp;<span>Bo11. We all know how much these players love having a fondue party. The last time they faced off, Bly baited Has into cannon rushing him. What will they come up with next?</span><span></span></div>
+                                        <td>
+                                            <div>500</div>
+                                        </td>
+                                        <td>
+                                            <div>Apartment Tour</div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>5500</td>
-                                        <td>Review 2011 Pig’s Balance Whine</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6000</td>
-                                        <td>Egg PiG Challenge (Like Battleships, But With An Egg Carton)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6500</td>
-                                        <td class="pigsty-showmatch"><span>Show Match: Hidden Name Tournament</span> <span class="collapse-hint">(click for details)</span>
-                                            <div class="pigsty-showmatch" style="display: none;"><img src="https://i.imgur.com/rK6BDsi.png"><strong>Players:</strong>&nbsp;<span>4 Unknowns</span><br><strong>Format:</strong>&nbsp;<span>We've hidden 4 players' identities from you and from each other. They'll play a Bo1 Swiss format of 4-5 rounds to compete for prize money. Then we'll do the reveal. Each player will guess who their opponents are. If no one else can guess who they are, they will earn bonus prize money.</span><span></span></div>
+                                        <td>
+                                            <div>600</div>
+                                        </td>
+                                        <td>
+                                            <div>Put On Roach PiG</div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>6969</td>
-                                        <td>Dating Or Siblings</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7500</td>
-                                        <td>Double Total Prize Pool To $4.6k<br>(1st = $1600, 2nd = $800, 3rd/4th = $400, 5th-8th = $200, 9th-12th = $100, 13th-16th = $50)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8000</td>
-                                        <td>Viewer Tournament (To Be Hosted After PiGFest)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8500</td>
-                                        <td>Air Fryer 3: New Epic Sandwich</td>
-                                    </tr>
-                                    <tr>
-                                        <td>9000</td>
-                                        <td>1 Hour PiG Roasts</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10000</td>
-                                        <td class="pigsty-showmatch"><span>Show Match: Twitch Plays Gabe</span> <span class="collapse-hint">(click for details)</span>
-                                            <div class="pigsty-showmatch" style="display: none;"><img src="https://i.imgur.com/NtuSFaa.jpg"><strong>Players:</strong>&nbsp;<span>Heromarine</span><br><strong>Format:</strong>&nbsp;<span>Like Wormtongue, PiG will whisper in Gabe's ear to tell him to do strats based on what the viewers demand. Will Gabe be able to be played like a puppet? Or will his try-hard instincts rebel against what will surely be meme builds.</span><span></span></div>
+                                        <td>
+                                            <div>700</div>
+                                        </td>
+                                        <td>
+                                            <div>Take A Shot Of Pickle Juice</div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>11000</td>
-                                        <td>Reveal PiG’s Bacon Slap Technique On Stream</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12000</td>
-                                        <td>Hot Wings Challenge - Have To Eat One Wing After Each Loss (With 1M Scoville Hot Sauce)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>13000</td>
-                                        <td>1 Hour Smurf Detective</td>
-                                    </tr>
-                                    <tr>
-                                        <td>14000</td>
-                                        <td class="pigsty-showmatch"><span>Show Match: Bounty Hunters ft. Astrea And Scarlett</span> <span class="collapse-hint">(click for details)</span>
-                                            <div class="pigsty-showmatch" style="display: none;"><img src="https://i.imgur.com/wuXhW0E.jpg"><strong>Players:</strong>&nbsp;<span>Astrea, Scarlett</span><br><strong>Format:</strong>&nbsp;<span>In a DreamHack Winter rematch, these pros will be fighting for a prize pool, but will be tempted by $$ bounties we've placed on random/silly strats. For example, do 5 bane drops, only make expansions off centre, do offensive recalls.</span><span></span></div>
+                                        <td>
+                                            <div>800</div>
+                                        </td>
+                                        <td>
+                                            <div>Air Fryer 1: Meat Pie</div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>15000</td>
-                                        <td>Triple Prize Pool To $6.9k<br>(1st = $2400, 2nd = $1200, 3rd/4th = $600, 5th-8th = $300, 9th-12th = $150, 13th-16th = $75)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>16000</td>
-                                        <td>Play Age Of Empires 4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>17000</td>
-                                        <td>PiG Makes His Favourite Dessert</td>
-                                    </tr>
-                                    <tr>
-                                        <td>17500</td>
-                                        <td>PiGGie Man Reviews: Make PiG Laugh</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18000</td>
-                                        <td class="pigsty-showmatch"><span>Show Match: The Outsiders Tournament</span> <span class="collapse-hint">(click for details)</span>
-                                            <div class="pigsty-showmatch" style="display: none;"><img src="https://i.imgur.com/eePE0zG.jpg"><strong>Players:</strong>&nbsp;<span>Grim Reaper, Dolan, Railgan, Rocker, Meomaika, Reaper, Ukko &amp; Ruff</span><br><strong>Format:</strong>&nbsp;<span>These outsiders are extremely high level players but all focus on really crazy, ridiculous strats. What happens when you throw them all into a tournament with each other?</span><span></span></div>
+                                        <td>
+                                            <div>900</div>
+                                        </td>
+                                        <td>
+                                            <div>Ear Lick ASMR</div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>19000</td>
-                                        <td>Unlock PiG Sty 2 With A $2k Prize Pool Pro Tournament</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20000</td>
-                                        <td>PiG Can’t Shave For 1 Month</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21000</td>
-                                        <td>Archon Viewers vs PiG</td>
-                                    </tr>
-                                    <tr>
-                                        <td>22000</td>
-                                        <td>PiG Cuts Dot’s Hair</td>
-                                    </tr>
-                                    <tr>
-                                        <td>23000</td>
-                                        <td>Quadruple Prize Pool To $9.2k<br>(1st = $3200, 2nd = $1600, 3rd/4th = $800, 5th-8th = $400, 9th-12th = $200, 13th-16th = $100)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>24000</td>
-                                        <td class="pigsty-showmatch"><span>Show Match: Funny Mods</span> <span class="collapse-hint">(click for details)</span>
-                                            <div class="pigsty-showmatch" style="display: none;"><img src="https://i.imgur.com/3lwS2Wk.jpg"><strong>Players:</strong>&nbsp;<span>Nina, Kiwian, Beastyqt, Neuro</span><br><strong>Format:</strong>&nbsp;<span>We will bring IMBA League back for one day and have these players show off some imba shizz on these funny mods. Thank you so much to Nice Username who kindly fixed it so we can play on these!</span><span></span></div>
+                                        <td>
+                                            <div>1000</div>
+                                        </td>
+                                        <td>
+                                            <div>Have Maynarde Co-Cast The Final Day</div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>25000</td>
-                                        <td>Air Fryer 4: Things That Shouldn’t Be Air-Fried Get Air Fried</td>
+                                        <td>
+                                            <div>1100</div>
+                                        </td>
+                                        <td>
+                                            <div>Channel Artosis For 1 Game</div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>26000</td>
-                                        <td>Up Total Prize Pool To $10k Total<br>(1st = $3300, 2nd = $1700, 3rd/4th = $850, 5th-8th = $450, 9th-12th = $250, 13th-16th = $125)</td>
+                                        <td>
+                                            <div>1200</div>
+                                        </td>
+                                        <td>
+                                            <div>100 Roach Squats</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>1300</div>
+                                        </td>
+                                        <td>
+                                            <div>PiG vs Dot Slime Volleyball Bo7</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>1337</div>
+                                        </td>
+                                        <td>
+                                            <div>Tier List</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>1500</div>
+                                        </td>
+                                        <td>
+                                            <div>Drink Raw Egg</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>1750</div>
+                                        </td>
+                                        <td>
+                                            <div>3rd Place Group Players Earn $50 Prize Money</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>2000</div>
+                                        </td>
+                                        <td>
+                                            <div>Eat An Onion</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>2500</div>
+                                        </td>
+                                        <td>
+                                            <div>4th Place Group Players Earn $25 Prize Money</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>3000</div>
+                                        </td>
+                                        <td>
+                                            <div>Play Like Florencio For An Hour</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>3500</div>
+                                        </td>
+                                        <td>
+                                            <div>Cast One EPT Game In Full Ozzy Mode</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>4000</div>
+                                        </td>
+                                        <td>
+                                            <div>Air Fryer 2: Hot Wings</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>4500</div>
+                                        </td>
+                                        <td>
+                                            <div>Guess The MMR</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>5000</div>
+                                        </td>
+                                        <td>
+                                            <div class="pigsty-showmatch"><span>Show Match: Cheesedown Bo11 ft. Has And Bly</span> <span class="collapse-hint">(click for details)</span></div>
+                                            <div class="pigsty-showmatch-details" style="display: none;"><img src="https://i.imgur.com/BM9oIhp.jpg"><strong>Players:</strong>&nbsp;<span>Bly, Has</span><br><strong>Format:</strong>&nbsp;<span>Bo11. We all know how much these players love having a fondue party. The last time they faced off, Bly baited Has into cannon rushing him. What will they come up with next?</span><span></span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>5500</div>
+                                        </td>
+                                        <td>
+                                            <div>Review 2011 Pig’s Balance Whine</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>6000</div>
+                                        </td>
+                                        <td>
+                                            <div>Egg PiG Challenge (Like Battleships, But With An Egg Carton)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>6500</div>
+                                        </td>
+                                        <td>
+                                            <div class="pigsty-showmatch"><span>Show Match: Hidden Name Tournament</span> <span class="collapse-hint">(click for details)</span></div>
+                                            <div class="pigsty-showmatch-details" style="display: none;"><img src="https://i.imgur.com/rK6BDsi.png"><strong>Players:</strong>&nbsp;<span>4 Unknowns</span><br><strong>Format:</strong>&nbsp;<span>We've hidden 4 players' identities from you and from each other. They'll play a Bo1 Swiss format of 4-5 rounds to compete for prize money. Then we'll do the reveal. Each player will guess who their opponents are. If no one else can guess who they are, they will earn bonus prize money.</span><span></span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>6969</div>
+                                        </td>
+                                        <td>
+                                            <div>Dating Or Siblings</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>7500</div>
+                                        </td>
+                                        <td>
+                                            <div>Double Total Prize Pool To $4.6k<br>(1st = $1600, 2nd = $800, 3rd/4th = $400, 5th-8th = $200, 9th-12th = $100, 13th-16th = $50)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>8000</div>
+                                        </td>
+                                        <td>
+                                            <div>Viewer Tournament (To Be Hosted After PiGFest)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>8500</div>
+                                        </td>
+                                        <td>
+                                            <div>Air Fryer 3: New Epic Sandwich</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>9000</div>
+                                        </td>
+                                        <td>
+                                            <div>1 Hour PiG Roasts</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>10000</div>
+                                        </td>
+                                        <td>
+                                            <div class="pigsty-showmatch"><span>Show Match: Twitch Plays Gabe</span> <span class="collapse-hint">(click for details)</span></div>
+                                            <div class="pigsty-showmatch-details" style="display: none;"><img src="https://i.imgur.com/NtuSFaa.jpg"><strong>Players:</strong>&nbsp;<span>Heromarine</span><br><strong>Format:</strong>&nbsp;<span>Like Wormtongue, PiG will whisper in Gabe's ear to tell him to do strats based on what the viewers demand. Will Gabe be able to be played like a puppet? Or will his try-hard instincts rebel against what will surely be meme builds.</span><span></span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>11000</div>
+                                        </td>
+                                        <td>
+                                            <div>Reveal PiG’s Bacon Slap Technique On Stream</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>12000</div>
+                                        </td>
+                                        <td>
+                                            <div>Hot Wings Challenge - Have To Eat One Wing After Each Loss (With 1M Scoville Hot Sauce)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>13000</div>
+                                        </td>
+                                        <td>
+                                            <div>1 Hour Smurf Detective</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>14000</div>
+                                        </td>
+                                        <td>
+                                            <div class="pigsty-showmatch"><span>Show Match: Bounty Hunters ft. Astrea And Scarlett</span> <span class="collapse-hint">(click for details)</span></div>
+                                            <div class="pigsty-showmatch-details" style="display: none;"><img src="https://i.imgur.com/wuXhW0E.jpg"><strong>Players:</strong>&nbsp;<span>Astrea, Scarlett</span><br><strong>Format:</strong>&nbsp;<span>In a DreamHack Winter rematch, these pros will be fighting for a prize pool, but will be tempted by $$ bounties we've placed on random/silly strats. For example, do 5 bane drops, only make expansions off centre, do offensive recalls.</span><span></span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>15000</div>
+                                        </td>
+                                        <td>
+                                            <div>Triple Prize Pool To $6.9k<br>(1st = $2400, 2nd = $1200, 3rd/4th = $600, 5th-8th = $300, 9th-12th = $150, 13th-16th = $75)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>16000</div>
+                                        </td>
+                                        <td>
+                                            <div>Play Age Of Empires 4</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>17000</div>
+                                        </td>
+                                        <td>
+                                            <div>PiG Makes His Favourite Dessert</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>17500</div>
+                                        </td>
+                                        <td>
+                                            <div>PiGGie Man Reviews: Make PiG Laugh</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>18000</div>
+                                        </td>
+                                        <td>
+                                            <div class="pigsty-showmatch"><span>Show Match: The Outsiders Tournament</span> <span class="collapse-hint">(click for details)</span></div>
+                                            <div class="pigsty-showmatch-details" style="display: none;"><img src="https://i.imgur.com/eePE0zG.jpg"><strong>Players:</strong>&nbsp;<span>Grim Reaper, Dolan, Railgan, Rocker, Meomaika, Reaper, Ukko &amp; Ruff</span><br><strong>Format:</strong>&nbsp;<span>These outsiders are extremely high level players but all focus on really crazy, ridiculous strats. What happens when you throw them all into a tournament with each other?</span><span></span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>19000</div>
+                                        </td>
+                                        <td>
+                                            <div>Unlock PiG Sty 2 With A $2k Prize Pool Pro Tournament</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>20000</div>
+                                        </td>
+                                        <td>
+                                            <div>PiG Can’t Shave For 1 Month</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>21000</div>
+                                        </td>
+                                        <td>
+                                            <div>Archon Viewers vs PiG</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>22000</div>
+                                        </td>
+                                        <td>
+                                            <div>PiG Cuts Dot’s Hair</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>23000</div>
+                                        </td>
+                                        <td>
+                                            <div>Quadruple Prize Pool To $9.2k<br>(1st = $3200, 2nd = $1600, 3rd/4th = $800, 5th-8th = $400, 9th-12th = $200, 13th-16th = $100)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>24000</div>
+                                        </td>
+                                        <td>
+                                            <div class="pigsty-showmatch"><span>Show Match: Funny Mods</span> <span class="collapse-hint">(click for details)</span></div>
+                                            <div class="pigsty-showmatch-details" style="display: none;"><img src="https://i.imgur.com/3lwS2Wk.jpg"><strong>Players:</strong>&nbsp;<span>Nina, Kiwian, Beastyqt, Neuro</span><br><strong>Format:</strong>&nbsp;<span>We will bring IMBA League back for one day and have these players show off some imba shizz on these funny mods. Thank you so much to Nice Username who kindly fixed it so we can play on these!</span><span></span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>25000</div>
+                                        </td>
+                                        <td>
+                                            <div>Air Fryer 4: Things That Shouldn’t Be Air-Fried Get Air Fried</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>26000</div>
+                                        </td>
+                                        <td>
+                                            <div>Up Total Prize Pool To $10k Total<br>(1st = $3300, 2nd = $1700, 3rd/4th = $850, 5th-8th = $450, 9th-12th = $250, 13th-16th = $125)</div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -434,8 +643,8 @@
                         <!-- wp:image {"className":"pigsty-img"} -->
                         <figure class="wp-block-image pigsty-img"><img src="https://www.pigstarcraft.com/wp-content/uploads/2021/10/pigfest-logo_bg.png" alt></figure>
                         <!-- /wp:image -->
-                        <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8em"}},"className":"info-box"} -->
-                        <p class="info-box" style="font-size:0.7em"><strong>Announcement:</strong> <a href="https://tl.net/forum/sc2-tournaments/578485-pig-sty-festival-25-31-oct" target="_blank" rel="noreferrer noopener">tl.net forum post</a><br><strong>Bracket:</strong> <a href="https://liquipedia.net/starcraft2/PiG_Sty_Festival" target="_blank" rel="noreferrer noopener">liquipedia.net</a><br><strong>Stream:</strong> <a href="https://twitch.tv/x5_pig" target="_blank" rel="noreferrer noopener">twitch.tv/x5_pig</a><br><strong>Donations:</strong> <a href="https://streamlabs.com/x5_pig/tip" target="_blank" rel="noreferrer noopener">PiG's donation page</a></p>
+                        <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.7em"}},"className":"info-box"} -->
+                        <p class="info-box" style="font-size:0.7em"><strong>Announcement:</strong> <a href="https://tl.net/forum/sc2-tournaments/578485-pig-sty-festival-25-31-oct" target="_blank" rel="noreferrer noopener">tl.net forum post</a><br><strong>Bracket:</strong> <a href="https://liquipedia.net/starcraft2/PiG_Sty_Festival" target="_blank" rel="noreferrer noopener">liquipedia.net</a><br><strong>Stream:</strong> <a href="https://twitch.tv/x5_pig" target="_blank" rel="noreferrer noopener">twitch.tv/x5_pig</a><br><strong>Donations:</strong> <a href="https://streamlabs.com/x5_pig/tip" target="_blank" rel="noreferrer noopener">PiG's donation page</a><br><strong>Schedule:</strong> <a href="https://calendar.google.com/calendar/u/0/embed?src=4astqm9c8933gl4a2luk2lpnas@group.calendar.google.com&ctz=Australia/Sydney" target="_blank" rel="noreferrer noopener">Google calendar</a></p>
                         <!-- /wp:paragraph -->
                         <!-- wp:image {"className":"pigsty-leaderboard-img"} -->
                         <figure class="wp-block-image pigsty-leaderboard-img"><img src="https://www.pigstarcraft.com/wp-content/uploads/2021/10/pigfest-leaderboard.png" alt="Pigsty Donations Leaderboard"></figure>
@@ -476,11 +685,11 @@
                 <!-- wp:html --><script>
     (function() {
         let $ = window.jQuery;
-        $('td.pigsty-showmatch img').click(function(evt) {
+        $('div.pigsty-showmatch-details img').click(function(evt) {
             $(this).toggleClass('highlight');
         });
-        $('td.pigsty-showmatch > span').click(function() {
-            $(this).parent().find('div.pigsty-showmatch').toggle();
+        $('div.pigsty-showmatch').click(function() {
+            $(this).parent().find('div.pigsty-showmatch-details').toggle();
         });
     })();
 </script>
